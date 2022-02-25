@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+        <link href="images/favicon.png" rel="icon" />
+        <title>Documentation | News App</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+    </head>
+
+    <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- Preloader End --> 
+
+        <!-- Document Wrapper   
+        =============================== -->
+        <div id="main-wrapper"> 
+
+            <!-- Header
+            ============================ -->
+            <header id="header" class="sticky-top"> 
+                <!-- Navbar -->
+                <nav class="primary-menu navbar navbar-expand-lg bg-light navbar-dropdown-dark">
+                    <div class="container-fluid">
+                        <!-- Sidebar Toggler -->
+                        <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span></span></button>
+                        <!-- Logo --> 
+                        <img src="images/logo.png" width="200" alt="logo"/>
+                        <!-- Logo End -->
+                    </div>
+                </nav>
+                <!-- Navbar End --> 
+            </header>
+            <!-- Header End --> 
+
+            <!-- Content
+            ============================ -->
+            <div id="content" role="main">
+
+                <!-- Sidebar Navigation
+                ============================ -->
+                <div class="idocs-navigation bg-light">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#introduction" class="nav-link active">Introduction</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#admin_panel">News App Admin Panel</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="#installation">Configure on your server</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#notification-management">Notification Management</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#system-configurations">Set System Configurations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#pp">Set Privacy Policy</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#tc">Set Terms Conditions</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about_us">Set About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact_us">Set Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#quiz_app" class="nav-link">News App</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="#setup">How to setup Flutter</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#appname'>How to change the app name?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#applogo'>How to change app logo?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#appcolor'>How to change App color?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#packagename'>How to change package name?</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#assetimage">How to change images in asset?</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#font">How to change app font?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#serverurl'>How to change server url to application?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#create_fcm'>How to create Firebase Project for Android and iOS</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#email_fcm'>Authenticate with Firebase Using Email and Password</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#google_fcm'>Authenticate with Firebase Using Google Sign-In</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#fb_fcm'>Authenticate with Firebase Using Facebook Login</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#phone_fcm'>Authenticate with Firebase Using Phone(Otp)</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#apple_fcm'>Authenticate with Firebase Using Apple Login</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#link'>How to Create Dynamic Link Using Firebase</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#fcm'>How to Integrate Firebase Cloud Messaging in app?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#admob'>How to use admob in app?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#fbAd'>How to use facebook Ads in app?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#limit'>How Increase Product Load Limit</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#api'>How to Change Api parameter</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#settings'>System settings for application</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#darkmode'>Added Light / Dark mode for better eyesight & battery life</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#prefcat'>Added and manage preference news for ease of access</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#change_lang'>How to change language code?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release APK</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#apk-iOS'>How to Publish iOS App to App Store</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
+                        <li class="nav-item"><a href="#rating" class="nav-link">Your Feedback</a></li>
+                        <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>                      
+                    </ul>
+                </div>
+
+
+                <!-- Docs Content  -->
+                <div class="idocs-content">
+                    <div class="container"> 
+
+                        <!-- Getting Started -->
+                        <section id="introduction">
+                            <h3>Introduction</h3>
+                            <p class="">Thank you for purchasing code. It really means a lot and It's our pleasure to serve top-notch service to you. Thank you so much for choosing<a href="https://wrteam.in/" style='color:#3c55d1' target="_blank"> WRTeam </a>. If you have trouble with the code and documentation please contact to our Support Team <a href="#support" style="color:#3c55d1">Here</a></p>
+                        </section>
+                        <hr class="divider">    
+
+                        <section id="admin_panel">
+                            <h3>News App Admin Panel</h3>
+
+                            <section id="installation">
+                                <h4>Requirements</h4>
+                                <p>PHP Version >= 7.3</p>
+                                <h4>How to Install News App on Your shared hosting?</h4>
+                                <ol>
+                                    <li>Create your domain or subdomain in your shared hosting</li>
+                                    <li>Create an empty database in your shared hosting and remember this credentials:
+                                        <br/><span>i. database name</span>
+                                        <br/><span>ii. database username</span>
+                                        <br/><span>iii. database password</span>                                
+                                    </li>
+                                    <li>Upload the source code you have downloaded from CodeCanyon and unzip it.</li>
+                                    <li>Now navigate to the url where your project is located.<br/>
+                                        ex. mydomain.com or subdomain.mydomain.com
+                                    </li>
+                                    <li>The installation screen should appear and guide you in the process.</li>
+                                </ol>
+                                <p>Thats it! Now you are ready to run your first News App : <b>https://news.wrteam.in</b></p>
+                                <b>Default Login Details</b><br>
+                                User: admin<br>
+                                Pass: admin123<br><br>
+                                <hr> 
+                            </section>
+
+                            <section id="notification-management">
+                                <h4>Notification Management</h4>
+                                <p>First Of all,we need to set the FCM server key from <a href="https://console.firebase.google.com" target="_blank">Firebase console</a></p>
+                                <img src="images/panel/notification-setting.png"/>
+                                <hr>  
+                            </section>
+
+                            <section id="system-configurations">
+                                <h4>Set System Configurations</h4>
+                                <p>Change the System Timezone, App Name, JWT KEY & App Logo of News admin panel. And also Enable / Disable Category, Subcategory, Breaking News, Live Streaming Comments.</p>
+                                <p>JWT KEY is just like password & You can create your own. It should be same in News app.</p>
+                                <img src="images/panel/system-configurations.png" alt='System Configurations' title='System Configurations'>
+                                <hr> 
+                            </section>
+
+                            <section  id="pp">
+                                <h4>Set Privacy Policy</h4>
+                                <p>Set Privacy Policy for your website and app.</p>
+                                <img src="images/panel/pp.png"/>
+                                <hr> 
+                            </section>
+
+                            <section  id="tc">
+                                <h4>Set Terms Conditions</h4>
+                                <p>Set Terms Conditions for your website and app.</p>
+                                <img src="images/panel/tc.png"/>					
+                                <hr>  
+                            </section>
+
+                            <section id="about_us">
+                                <h4>About Us Content</h4>
+                                <p>Set and manage your about us content for app.</p>
+                                <img src="images/panel/about-us.png"/>					
+                                <hr>
+                            </section>
+
+                            <section id="contact_us">
+                                <h4>Contact Us Content</h4>
+                                <p>Set and manage your Contact us content for app.</p>
+                                <img src="images/panel/contact-us.png"/>					
+                                <hr> 
+                            </section>
+
+                        </section>
+                        <hr class="divider">  
+
+                        <section id="quiz_app">
+                            <h3>News App</h3>
+
+                            <section id="setup">
+                                <h4>How to Setup Flutter in Android Studio</h4>
+                                <ul>
+                                    <li>Download Lastest Flutter SDK from below link.in that click on flutter_window_xxx.zip button.</li>
+                                    <li>
+                                        <a href="https://flutter.dev/docs/get-started/install/windows">Flutter sdk Here.</a>
+                                        <img src="images/app/setup.png" alt="Flutter UI Component" />
+                                    </li>
+                                    <li>Extract the zip file and copy flutter folder into your desired installation location for the Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like C:\Program Files\).</li>
+                                    <li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking. 
+                                        <img src="images/app/setup2.png" alt="Flutter UI Component"/>
+                                    </li>
+                                    <li>Now set your enviournment variable.</li>
+                                    <li>From the Start search bar in , type ‘env’ and select Edit environment variables for your account.
+                                        <img src="images/app/path.png" alt="Flutter UI Component" />
+                                    </li>
+                                    <li>Under User variables check if there is an entry called Path:</li>
+                                    <li>Click on Edit.new Dialog open from it click on new and copy full path to flutter\bin as its value.</li>
+                                    <li>Now Restart your pc for changes to take effect.                                    
+                                        <img src="images/app/path2.png" alt="Flutter UI Component" />
+                                    </li>
+                                    <li>Now check everything is ok or not.</li>
+                                    <li>Open cmd and do following shown in below picture.
+                                        <img src="images/app/check.png" alt="Flutter UI Component" />
+                                    </li>
+                                    <li>Now open Android Studio and create new flutter project then select your flutter sdk file to the location where we have downloaded earlier and that's it.
+                                        <img src="images/app/flutter.png" alt="Flutter UI Component" />
+                                    </li>                                    
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="appname">
+                                <h4>How to change AppName?</h4>
+                                <ul>
+                                    <li>Open Helper > Constant.dart and chnage that string as shown as below fig.
+                                        <img src="images/app/appname.png" alt="news" />
+                                    </li>
+                                    <li>For Android, to change label that is shown below android app icon, open android > app > src > main > open mainfest.xml and inside that label change that string as shown in below fig. 
+                                        <img src="images/app/appname1.png" alt="news" />
+                                    <li>For iOS, to change label that is shown below ios app icon, open ios > Runner > Info.plist inside that <b>CFBundleName</b> change that string as shown in below fig. 
+                                        <img src="images/app/appname2.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+
+                            <section id="applogo">
+                                <h4>How to change app logo?</h4>
+                                <ul>
+                                    <li>For Android, open android > app > src > main > res > mipmap add here your logo according to device screen size.
+                                        <img src="images/app/logo_1.png" alt="news" />
+                                    </li>
+                                    <li>For iOS, open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need to put your logo according to different size.
+                                        <img src="images/app/logo_2.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="appcolor">
+                                <h4>How to Change app color</h4>
+                                <ul>
+                                    <li>To change app color, your need to add your color code in  lib > Helper.dart > color.dart</li>
+                                    <li>In flutter color code start from 0xff so your have to add your color hex after this 4 digit.your can change primary,second,fontcolor as shown in below image.
+                                        <img src="images/app/appcolor.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="packagename">
+                                <h4>How to change package name</h4>
+                                <ul>
+                                    <li>In the Android pane, click on the little gear icon.Uncheck/Deselect the Compact Empty Middle Packages option.
+                                        <img src="images/app/packagename_1.png" alt="news" />
+                                    </li>
+                                    <li>Your package directory will now be broken up in individual directories.
+                                        <img src="images/app/packagename_2.png" alt="news" />
+                                    </li>
+                                    <li>Individually select each directory you want to rename, and: Right-click it Select Refactor Click on Rename current In the Pop-up dialog.
+                                        <img src="images/app/packagename_3.png" alt="news" />
+                                    </li>
+                                    <li>Enter the new name and hit Refactor.Allow a minute to let Android Studio update all changes.
+                                        <img src="images/app/packagename_4.png" alt="news" />
+                                    </li>
+                                    <li>Now press ctrl + shift + R and replace old packagename with your new packagename. 
+                                        <img src="images/app/packagename_5.png" alt="news" />
+                                    </li>
+                                    <li>For ios open ios > Runner > info.plist > there is the key CFBundleIdentifier change the string value for that as shown in below.
+                                        <img src="images/app/packagename_6.png" alt="news" /><br/>
+                                        <img src="images/app/packagename_7.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="assetimage">
+                                <h4>How to Change Images in app</h4>
+                                <ul>
+                                    <li>Go to assets > images folder. Here you have to change all image to your app image according to different folder different dimension images is used. 
+                                        <img src="images/app/img.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="font">
+                                <h4>How to Change App font</h4>
+                                <ul>
+                                    <li>Go to Assets > font folder .here you have to copy your font.now go to pubspec.yaml in font section change your font name as shown in below image.
+                                        <img src="images/app/font.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>                                    
+                            </section>
+
+                            <section id="serverurl">
+                                <h4>How to set JWT key and change server url</h4>
+                                <ul>
+                                    <li>Go to lib > helper > Constant.dart. here you have to change your API server url and set your JWT key.
+                                        <img src="images/app/serverurl.png" alt="news" />
+                                    </li>
+                                    <li>Go to lib > helper > Session.dart. here you have to change your JWT key details.
+                                        <img src="images/app/jwt.png" alt="news" />
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="create_fcm">
+                                <h4>How to Create firebase project</h4>
+                                <ul>
+                                    <li>Go to firebase console.and then click on add project.</li>
+                                    <li>after that below given step will come. here you have to enter your project details.Enter your project name and then press on continue.then select email and then press continue. 
+                                        <img src="images/app/create1.png" alt="news" /><br>
+                                        <img src="images/app/create11.png" alt="news" /><br>
+                                        <img src="images/app/create12.png" alt="news" />
+                                    </li>                                   
+                                    <li>after that your project is created.
+                                        <img src="images/app/create2.png" alt="news" />
+                                    </li>
+                                    <li>For android,now first click on android.
+                                        <img src="images/app/create3.png" alt="news" />
+                                    </li>
+                                    <li>after that below given screen will appear, in that you have to enter your packagename and appname and then click register app.
+                                        <img src="images/app/create4.png" alt="news" />
+                                    </li>
+                                    <li>click on android > gradlew in right click on open in Terminal fig. shown in below. 
+                                        <img src="images/app/sha1.png">
+                                    </li>
+                                    <li>write in terminal below command and debug SHA will print copy that and add it in firebase console.
+                                        <img src="images/app/sha2.png">
+                                    </li>
+                                    <li>after that below given screen will appear, now click on download google-services.json.after that open the file and copy content of file and replace in android > app > google-service.json.
+                                        <img src="images/app/create7.png" alt="news" /><br/>
+                                        <img src="images/app/create8.png" alt="news" />
+                                    </li>
+                                    <li>now click on next next and in last step press continue to the console button.</li>
+                                    <li>for ios,perform below step. now click on add app.
+                                        <img src="images/app/create9.png" alt="news" /><br>
+                                        <img src="images/app/create10.png" alt="news" />
+                                    </li>
+                                    <li>and then click on ios button.in this same as android step will be come here you have to enter your appname.then next and on next screen download google service info.plist file.
+                                        <img src="images/app/create111.png" alt="news" /><br>
+                                        <img src="images/app/create112.png" alt="news" />
+                                    </li>
+                                    <li>now copy the content of that file and replace in ios > Runner > GoogleServie-info.plist. 
+                                        <img src="images/app/create113.png" alt="news" /><br>
+                                    </li>
+                                    <li>now press next next on firebase console and that's it your project is created on ios.</li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="email_fcm">
+                                <h4>Steps to Authenticate firebase using Email and Password</h4>
+                                <ul>
+                                    <li>Open your firebase console.</li>
+                                    <li>Go to Sign-in method in Authentication.</li>
+                                    <li>Go to the Email/Password and in that enable to allow user to sign in using Email and Password and Email link both.
+                                        <img src="images/app/email_fcm1.png" alt="news" /><br>
+                                        <img src="images/app/email_fcm2.png" alt="news" /><br>
+                                        after press on save button email authentication enable in your app.
+                                    </li>
+                                    <li>Change sender name and subject for verify email and reset password. 
+                                        <img src="images/app/email_fcm3.png" alt="news" /><br>
+                                        <img src="images/app/email_fcm4.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="google_fcm">
+                                <h4>Steps to Authenticate firebase using Google </h4>
+                                <ul>
+                                    <li>Open your firebase console.</li>
+                                    <li>Go to Sign-in method in Authentication.</li>
+                                    <li>Go to the Google and enable the google sign_in automatically.
+                                        <img src="images/app/google_fcm1.png" alt="news" /><br>
+                                        <img src="images/app/google_fcm2.png" alt="news" />
+                                    </li>
+                                    <li>Create SHA1 fingerprint and add into project setting.
+                                        <img src="images/app/sha2.png" alt="news" /><br><br>
+                                        <img src="images/app/google_fcm3.png" alt="news" />
+                                    </li>
+                                    <li>after press on save button google authentication enable in your app.</li>
+                                </ul>
+                            </section>
+
+                            <section id="fb_fcm">
+                                <h4>Authenticate Using Facebook Login on Android with Firebase.</h4>
+                                <ul>
+                                    <li>first create project for your android application , go to  <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a></li>
+                                    <li> Go to Facebook Quick Start Integrate the Facebook SDK</li>
+                                    <li>On the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site, get the <b>App ID</b> and an <b>App Secret</b> for your app. </li>
+                                    <li> In the <a href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the <b>Auth</b> section. Enable Facebook Login.</li>
+                                    <li>On the <b>Sign in method</b> tab, enable the <b>Facebook</b> sign-in method and specify the <b>App ID</b> and <b>App Secret</b> you got from Facebook.
+                                        <img src="images/app/fb0.png">
+                                    </li>
+                                    <li>Then, make sure your <b>OAuth redirect URI</b> (e.g. my-app-12345.firebaseapp.com/__/auth/handler) is listed as one of your <b>OAuth redirect URIs</b> in your Facebook app's settings page on the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site in the <b>Product Setting > Facebook Login</b> config </li>
+                                    <li>Add the dependencies for Firebase Authentication and Facebook Login SDK to your app-level build.gradle file:
+                                        <img src="images/app/fb1.png"><br>
+                                        <b>Edit Your Resources and Manifest</b>
+                                    </li>
+                                    <li>Create strings for your Facebook app ID and for those needed to enable Chrome Custom Tabs. Also, add FacebookActivity to your Android manifest.</li>
+                                    <li>Open your app >res >values >strings.xml file.
+                                        <img src="images/app/fb3.png">
+                                    </li>
+                                    <li>Open the app >manifest >AndroidManifest.xml file.</li>
+                                    <li>Add the following meta-data element, an activity for Facebook
+                                        <img src="images/app/fb2.png">
+                                    </li>
+                                    <li>Associate Your Package Name and Default Class with Your App</li>
+
+                                    <li>Provide the Development and Release Key Hashes for Your App</li>
+                                    <li>To ensure the authenticity of the interactions between your app and Facebook, you need to supply us with the Android key hash for your development environment. If your app has already been published, you should add your release key hash too.
+                                        <img src="images/app/fb5.png">
+                                        <b>Generating a Development Key Hash</b>
+                                        <ol>
+                                            <li> We will use SHA-1 key to generate hashkey for facebook login.</li>
+                                            <li>you can generate hash online. Here is external link for generate key has for facebook login.<a href="http://tomeko.net/online_tools/hex_to_base64.php" target="_blank">Key hash Genrate Link</a>
+                                                <img src="images/app/hash_key1.png"><br>
+                                                <img src="images/app/hash_key2.png">
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>Create iOS application here.
+                                        <img src="images/app/fb_ios1.png">
+                                    </li>
+                                    <li>Add your iOS Bundle Id as shown as below fig.
+                                        <img src="images/app/fb_ios2.png">
+                                    </li>
+                                    <li> Copy code shown in below fig. and paste into Info.plist file.</li>
+                                    <li>and after Configure your Info.plist file.
+                                        <img src="images/app/fb_ios3.png"><br>
+                                        <img src="images/app/fb_ios4.png"><br>
+                                        and finally iOS app in facebook authentication enabled.<br>  
+                                    </li>
+
+                                </ul>
+                                <hr>
+                            </section>
+                            
+                            
+                            <section id="phone_fcm">
+                                <h4>How to enable Firebase Phone Authentication(OTP).</h4>
+                                <ul>
+                                    <li>Open your firebase console.</li>
+                                    <li>Go to Authentication and open Sign-in method.</li>
+                                    <li>Enable Phone Sign-in method and save.
+                                        <img src="images/app/phone.png" alt="news"/>
+                                </ul>
+                            </section>
+
+                            <section id="link">
+                                <h4>Steps to Create Dynamic Link</h4>
+                                <ul>
+                                    <li>Open your firebase console.</li>
+                                    <li>Go to Dynamic Links.
+                                        <img src="images/app/link.png" alt="news"/>
+                                    </li>
+                                    <li>and then Create a domain or use the google provided domain and press the continue button as shown in image below.
+                                        <img src="images/app/link1.png" alt="news" /><br>
+                                        <img src="images/app/link2.png" alt="news"/><br>
+                                        After that your domain created successfully message shown and press finish button.<br><br>
+                                    </li>
+                                    <li>Create new dynamic link as shown in image below. 
+                                        <img src="images/app/link3.png" alt="news"/>
+                                    </li>
+                                    <li>Then write your URL prefix into your Short URL link as shown in image below.
+                                        <img src="images/app/link4.png" alt="news"/>
+                                    </li>
+                                    <li>Next step in set the deep link URL and dynamic link name as shown in image below.
+                                        <img src="images/app/link5.png" alt="news"/>
+                                    </li>
+                                    <li>After select the iOS project into use the deep link as shown in image below.
+                                        <img src="images/app/link6.png" alt="news"/>
+                                    </li>
+                                    <li>Then select your android project into use the deep link and choose the option if your app is not installed as shown in image below.
+                                        <img src="images/app/link7.png" alt="news" />
+                                    </li>
+                                    <li>And the 5th step is optional if you want to use then choose your apppropriate way or press the create button to finally create your dynamic link.
+                                        <img src="images/app/link8.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="apple_fcm">
+                                <h4>Steps to Authenticate firebase using Apple </h4>
+                                <ul>
+                                    <li>Open your firebase console.</li>
+                                    <li>Go to Sign-in method in Authentication.</li>
+                                    <li>Go to the Apple and enable apple sign in.
+                                        <img src="images/app/apple1.png" alt="news"/>
+                                    </li>
+                                    <li>In Xcode, select the Signing & Capabilities tab, and add "Sign In With Apple" as a new Capability then select a team on the Code Signing section.
+                                        <img src="images/app/apple2.png" alt="news"/>
+                                    </li>
+                                    <li>This will generate and configure an App ID in the "Certificates, Identifiers & Profiles" section of the Apple Developer portal. </li>
+                                </ul>
+                            </section>
+
+                            <section id="link">
+                                <h4>Steps to Create Dynamic Link</h4>
+                                <ul>
+                                    <li>Open your firebase console.</li>
+                                    <li>Go to Dynamic Links.
+                                        <img src="images/app/link.png" alt="news"/>
+                                    </li>
+                                    <li>and then Create a domain or use the google provided domain and press the continue button as shown in image below.
+                                        <img src="images/app/link1.png" alt="news" /><br>
+                                        <img src="images/app/link2.png" alt="news"/><br>
+                                        After that your domain created successfully message shown and press finish button.<br><br>
+                                    </li>
+                                    <li>Create new dynamic link as shown in image below. 
+                                        <img src="images/app/link3.png" alt="news"/>
+                                    </li>
+                                    <li>Then write your URL prefix into your Short URL link as shown in image below.
+                                        <img src="images/app/link4.png" alt="news"/>
+                                    </li>
+                                    <li>Next step in set the deep link URL and dynamic link name as shown in image below.
+                                        <img src="images/app/link5.png" alt="news"/>
+                                    </li>
+                                    <li>After select the iOS project into use the deep link as shown in image below.
+                                        <img src="images/app/link6.png" alt="news"/>
+                                    </li>
+                                    <li>Then select your android project into use the deep link and choose the option if your app is not installed as shown in image below.
+                                        <img src="images/app/link7.png" alt="news" />
+                                    </li>
+                                    <li>And the 5th step is optional if you want to use then choose your apppropriate way or press the create button to finally create your dynamic link.
+                                        <img src="images/app/link8.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="fcm">
+                                <h4>How to Integrate Firebase Cloud Messaging in app?</h4>
+                                <p class="text-danger"><b>Integrating Firebase Cloud Messaging</b></p>
+                                <ul>
+
+                                    <li>For FCM Notification first you have to register your application with firebase.<li>
+                                    <li><a href='#create_fcm'>Create Firebase Project for Application.</a>  If you already created firebase project then you dont have to do that again.</li>
+                                    <li>Firebase dependency, service class and all nacessary class are already included in project.</li>
+                                    <li>So, you dont have to do extra code here.</li>
+                                    <li>Just download <b>Google-service.json</b> and replace with existing file.</li>
+                                </ul>
+                                <h4>Sending Messages from PHP Backend</h4>
+                                <ul>
+                                    <li>Add <b>Firebase Server Key</b> in notification setting. Get server key from your firebase project and set in panel.
+                                        <img src="images/app/notification1.png"><br/>
+                                        <img src="images/app/notification.png">
+                                    </li>
+
+                                    <li>for iOS your need to perform below given step</li>
+                                    <li>In Xcode, open the project.</li>
+                                    <li>In the Project Navigator (the left-hand menu), select the project icon that represents your app.</li>
+                                    <li>In the top-left corner of the right-hand pane in Xcode, select your app's target.</li>
+                                    <li>Navigate to the Capabilities tab.</li>
+                                    <li>Enable Push Notifications.</li>
+                                    <li>Check Remote Notifications and Background Fetch from Enabling Background Modes.
+                                        <img src="images/app/1.png">
+                                    </li>
+                                    <li>APNs (Apple's Push Notification service) currently supports two types of connections: token-based (.p8) and certificate-based (.p12).you can follow either one of them.</li>
+                                </ul>
+                                <h4>For Token-based (.p8).</h4>
+                                <ul>
+                                    <li>Log in to the Apple Developer Portal.</li>
+                                    <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the App ID associated with your app.</li>
+                                    <li>On the screen for your App ID, check Capabilities > Push Notifications.
+                                        <img src="images/app/2.png"><br>
+                                        <img src="images/app/3.png">
+                                    </li>
+                                    <li>Select App ID in next page & click continue.</li>
+                                    <li>And then create Development SSL Certificate &  Production SSL Certificate by adding CSR certificate. follow Apple's <a href="https://help.apple.com/developer-account/" style="color:red">Create a certificate signing request instructions.</a>
+                                    </li>
+                                    <li>Navigate to Certificates, IDs & Profiles > Keys Section and add a Universal key for Notifications,which you can use for more than one apps as well.
+                                        <img src="images/app/4.png">
+                                    </li>
+                                    <li>Just save and Download & keep it safe, as it will be downloaded only once.
+                                        <img src="images/app/5.png">
+                                    </li>
+                                    <li>Then go to Firebase and add this .p8 file along with Your Key ID and Team ID.
+                                        <img src="images/app/6.png">
+                                    </li>
+                                </ul>
+                                <h4>FOR certificate-based (.p12) :</h4>
+                                <ul>
+                                    <li>Log in to the Apple Developer Portal.</li>
+                                    <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the App ID associated with your app.</li>
+                                    <li>On the screen for your App ID, check Capabilities > Push Notifications.</li>
+                                    <li>Click Save and respond to the Modify App Capabilities dialog box that appears.</li>
+                                    <li>To create the certificate, we will use to communicate with Apple when sending push notifications:</li>
+                                    <li>In a new browser tab, follow Apple's <a href="https://help.apple.com/developer-account/#/devbfa00fef7" class="text-danger">Create a certificate signing request instructions.</a></li>
+                                    <li>In the Apple Developer Portal, navigate back to your App ID.</li>
+                                    <li>Click Capabilities > Push Notifications > Configure.</li>
+                                    <li>Click one of the following buttons:
+                                        <ul><li>Development SSL Certificate > Create Certificate (for testing push notifications while developing an iOS app).</li>
+                                            <li>Production SSL Certificate > Create Certificate (for sending push notifications in production).</li>
+                                        </ul>                                        
+                                    </li>
+                                    <li>Click Choose File and select the certificate signing request you created above.</li>
+                                    <li>Click Continue.</li>
+                                    <li>Click Download to download the certificate.</li>
+                                    <li>Use this file to export a .p12 file in the next step.</li>                                    
+                                    <li>Navigate in the Apple Developer Portal to Certificates, IDs & Profiles > Provisioning Profiles.</li>
+                                    <li>Click the provisioning profile you'd like to edit.</li>
+                                    <li>Edit the provisioning profile as necessary, and click Save.</li>
+                                    <li>Click Download, and double-click the downloaded provisioning profile to install it.</li>
+                                    <li>Make sure your Xcode project is configured to use the provisioning profile as necessary.Next, export the downloaded certificate (.cer file) as a .p12 file that can be uploaded to firebase:</li>
+                                    <li>On your Mac, double-click the .cer file to open it in Keychain Access.</li>
+                                    <li>In Keychain Access, in the lower-left corner, select Category > Certificates.</li>
+                                    <li>Select the certificate to export.</li>
+                                    <li>Choose File > Export Items.</li>
+                                    <li>Enter a name in the Save As field.</li>
+                                    <li>Accept the default .p12 file format and click Save. Respond to the prompts, and enter a password for the file if necessary.</li>
+                                    <li>Keep track of this file, since you'll upload it to firebase in a later step.
+                                        <img src="images/app/7.png"><br>
+                                        <img src="images/app/8.png">
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+
+                            <section id="admob">
+                                <h4>Set up admob in app</h4>
+                                <ul>
+                                    <li>Add an android app.</li>
+                                    <li>In the  <a href="https://apps.admob.com" style="color:red">Admob console,</a> click add android app from the Apps menu.
+                                        <img src="images/app/admob1.png" alt="news" />
+                                    </li>
+                                    <li>Enter your app name and Enabling user metrics is not necessary to complete this codelab. However, we recommend that you do because it allows you to understand user behavior in more detail and click on ADD APP button. 
+                                        <img src="images/app/admob2.png" alt="news" /><br>
+                                        <img src="images/app/admob1.png" alt="news" />
+                                    </li>
+                                    <li>Create ad units.
+                                        <img src="images/app/admob3.png" alt="news" />
+                                    </li>
+                                    <li>Select Banner unit ad and enter banner unit ad name then click on Create ad Unit button.
+                                        <img src="images/app/admob4.png" alt="news" /><br>
+                                        <img src="images/app/admob5.png" alt="news" />
+                                    </li>
+                                    <li> Then add another unit add shown in below image and Same as above create Interstitial ads and native ads.
+                                        <img src="images/app/admob6.png" alt="news" />
+                                    </li>
+                                    <li>Same as Add iOS app and same as add units in iOS app.</li>
+                                    <li>Add your ad unit id in admin panel Settings -> System Configurations.
+                                        <img src="images/app/admob7.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+                            
+                            <section id="fbAd">
+                                <h4>Set up Facebook Ads in app</h4>
+                                <ul>
+                                    <li> <a href="https://developers.facebook.com" style="color:red">Go to Facebook for Developers</a>.</li>
+                                   
+                                        <img src="images/app/fbAd.png" alt="news" /><br>
+                                         <img src="images/app/fbAd2.png" alt="news" />
+                                   
+                                    <li>Follow below next step and add name, email address, business name and country and click on next button. 
+                                        <img src="images/app/fbAd3.png" alt="news" />
+                                    </li>
+                                    <li>Add Property name like below image and click on next button.
+                                        <img src="images/app/fbAd4.png" alt="news" />
+                                    </li>
+                                    <li>Fill Android App details and click on next button shown in below image.
+                                        <img src="images/app/fbAd5.png" alt="news" />
+                                    </li>
+                                    <li> Add your payment account details for facebook live ads shown in app.
+                                        <img src="images/app/fbAd6.png" alt="news" />
+                                    </li>
+                                    <li>After that add banner,interstitial,native ads shown in below image.
+                                    <img src="images/app/fbAd7.png" alt="news" />
+                                    </li>
+                                    <li>Same as Add iOS app and same as add ads in iOS app.</li>
+                                    <li>Copy your all Payment Id from specific all ads and paste in admin panel in settings in system configuration in System Settings for Android Facebook Ads and System Settings for IOS Facebook Ads.  
+                                        <img src="images/app/fbAd8.png" alt="news" /><br>
+                                         <img src="images/app/fbAd9.png" alt="news" />
+                                    </li>
+                                    <li>Note:When your app live that time remove testing id from code shown in below image.
+                                    <img src="images/app/fbAd10.png" alt="news" /><br>
+                                         <img src="images/app/fbAd11.png" alt="news" />
+                                    </li>
+                                    
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="limit">
+                                <h4>How to Increase Product Load Limit</h4>
+                                <ul>
+                                    <li>you can chnage at a time when request send to server how many item will fetch.go to lib > Helper > Constant.dart file.</li>
+                                    <li>Please check below given image.
+                                        <img src="images/app/limit.png">
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="api">
+                                <h4>Change Api Parameter</h4>
+                                <ul>
+                                    <li>You can change or add api parameter from lib > Helper > String.dart. here all list of api and api paramater is listed that is used in app.
+                                        <img src="images/app/api.png" alt="news" />
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="settings">                               
+                                <h4>System Settings for Application</h4>
+                                <ul>
+                                    <li>First login to admin panel.</li>
+                                    <li>Settings > System Configuration.</li>
+                                    <li>Category Mode: Enable and Disable category from admin panel when you want to show or not category in application .</li>
+                                    <li>Commnents Mode: Enable and Disable comments from admin panel when you want to show or not comments in application.</li>
+                                    <li>Sub Category Mode: Enable and Disable sub category from admin panel when you want to show or not sub category in application .</li>
+                                    <li>Live Streaming News Mode: Enable and Disable live news from admin panel when you want to show or not live news in application.</li>
+                                    <li>Breaking News Mode: Enable and Disable breaking news from admin panel when you want to show or not breaking news in application.
+                                        <img src="images/app/settings.png">
+                                    </li>
+                                    <li>Settings > Privacy Policy. </li>
+                                    <li>Privacy Policy:  Add Your news Privacy Policy It Will Reflect in Application Privacy Policy.</li>
+                                    <li>Terms Conditions:  Add Your news Terms Conditions It Will Reflect in Application Terms of Service.</li>
+                                    <li>About Us:  Add Your Company Details It Will Reflect in Application About Us.</li>
+                                    <li>Contact us:  Add Your news Company Contact Details It Will Reflect in Application Contact Us .
+                                        <img src="images/app/privacy.png">
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="darkmode">
+                                <h4>Added Light / Dark mode for better eyesight & battery life</h4>
+                                <ul>
+                                    <li>Enjoy dark and light mode to change from settings page.
+                                        <img src="images/app/dark.png">
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>	
+
+
+                            <section id="prefcat">
+                                <h4>Added preference news for ease of access</h4>
+                                <ul>
+                                    <li>When user can first time login that time if they want to select their preferred categories news to shown in front page then select categories otherwise skip and shown in front page in latest news and if user can manage and add their preferred Categoris from settings page.
+                                        <img src="images/app/prefcat1.png">
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="change_lang">
+                                <h4>How to change Language code</h4>
+                                <ul>
+                                    <li>Here app in change in 5 languages(English,Spanish,Hindi,Portugies,Turkies).</li>
+
+                                    <li>If you want to add or remove any of the language then you can change language code in these files.</li>
+                                    <li>Open lib > Helper > Demo_Localizations.dart file in change your appropriate language code add or remove from here shown in below figure.
+                                        <img src="images/app/lang1.png">
+                                    </li>
+                                    <li>Open lib > main.dart file in change your appropriate language code add or remove from here shown in below figure.
+                                        <img src="images/app/lang2.png">
+                                    </li>
+                                    <li>Open lib > Helper > Session.dart file in change your appropriate language code add or remove from here shown in below figure.
+                                        <img src="images/app/lang3.png"><br>
+                                        <img src="images/app/lang4.png">
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="apk">
+                                <h4>Generate Release APK</h4>
+                                <ul>
+                                    <li>In you android studio, right click on you android module of you flutter project.there is option flutter, click on that inside open in new module.then generate release apk from that new module.
+                                        <img src="images/app/apk1.png" alt="news" />
+                                    </li>
+                                    <li>and if in your android studio if flutter option is disable then go to file option in your android studio inside open then locate your flutter project's android module and open it.now generate relase apk from that new module.
+                                        <img src="images/app/apk2.png" alt="news"/><br>
+                                        <img src="images/app/apk3.png" alt="news"/>
+                                    </li>
+                                    <li>In Build menu there is option generate signed bundle/apk.
+                                        <img src="images/app/apk4.png" alt="news"/>
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                            <section id="apk-iOS">
+                                <h4>Steps to Publish iOS App to App Store</h4>
+                                <ul>
+                                    <li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded From Firebase Project]  inside folder named Runner.
+                                        <img src="images/app/ios1.png" alt="news"/>
+                                    </li>
+                                    <li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.
+                                        <img src="images/app/ios2.png" alt="news"/>
+                                    </li>
+                                    <li>After that Select <b>Archive</b> From Product Menu of Xcode as shown below. 
+                                        <img src="images/app/ios3.png" alt="news"/>
+                                    </li>
+                                    <li>Once Build / Archive Generated, pop up window will be shown. Validate app First, and After Successfull Validation of App, You Can Distribute App to AppStore.
+                                        <img src="images/app/ios4.png" alt="news" />
+                                    </li>
+                                    <li>After SuccessFull Submission of Build File, it will be Reflected to your Apple Developer Account in which we have created app with same Bundle ID.
+                                        <a href="https://codewithchris.com/submit-your-app-to-the-app-store/" style="color:red">Click here for Detailed Help.</a>
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
+
+                            <section id="support">
+                                <h3>Support</h3>
+                                <p>Its our pleasure to serve our service and support. please contact our support team.</p>
+                                <p>Head of Customer Support : Nikita Bhanderi <a href="https://join.skype.com/invite/VkdXAk8mu9ay" target="_blank" style="color:#3c55d1">Skype Name : Nikita Bhanderi</a></p>
+                                <p>To help our customers, we constantly be in touch with every customer if they need any assistance regarding our product. 
+                                    We offer our customers a support from  <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) – We are a Team located in India – Asia.</strong></p>
+                                <p>Typically we reply our customers for all the questions and queries within 24 hours of time via comments, support forum or emails.</p>
+                            </section>
+                            <hr class="divider">  
+
+                            <section id="rating">
+                                <h3>Your Feedback</h3>
+                                <p>Dear valuable customer,
+                                    Thank you very much for choosing our product.
+                                    It's our pleasure to serve top-notch service to you.
+                                    Please give us your honest feedback that will help us to make a more strong and reliable product by click here <a href="https://codecanyon.net/item/news-flutter-news-full-app/32062835" style="color:#3c55d1" target="_blank">Rate Us</a>.
+                                    Thank you very much.</p>
+                            </section>
+                            <hr class="divider">  
+
+                            <section id="contactus">
+                                <h3>Contact Us</h3>
+                                <p>WRTeam has creative and dedicated group of developers who are mastered in Apps Developments and Web Application Development with a niche in delivering quality solutions to customers across the globe.
+                                    Contact us today to find out how we can help you or for freelance work.
+                                </p><p>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
+                                </p><p>Mail Us : info@wrteam.in</p>
+                                <p>Thank you very much.</p>
+                            </section>
+                            <hr class="divider">  
+
+                            </div>
+                            </div>
+
+                            </div>
+                            <!-- Content end --> 
+
+
+                            </div>
+                            <!-- Document Wrapper end --> 
+
+                            <!-- Back To Top --> 
+                            <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+                            <!-- JavaScript
+                            ============================ -->
+                            <script src="assets/vendor/jquery/jquery.min.js"></script> 
+                            <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+                            <!-- Easing --> 
+                            <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+                            <!-- Custom Script -->
+                            <script src="assets/js/theme.js"></script>
+                            </body>
+                            </html>
