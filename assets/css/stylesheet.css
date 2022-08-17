@@ -654,7 +654,7 @@ hr {
     width: 5px!important;
 }
 .idocs-navigation::-webkit-scrollbar-thumb {
-    background: #08B9B7!important;
+    background: #ff3f4c!important;
 }
 .idocs-navigation > .nav {
     padding: 60px 0;
@@ -1951,7 +1951,7 @@ hr {
 }
 
 .nav:not(.nav-pills) .nav-item .nav-link.active, .nav:not(.nav-pills) .nav-item .nav-link:hover {  
-    color: #08B9B7;
+    color: #ff3f4c;
 }
 
 .nav-pills .nav-link:not(.active):hover {
