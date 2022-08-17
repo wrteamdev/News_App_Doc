@@ -92,9 +92,8 @@
                                 <li class="nav-item"><a class="nav-link" href='#limit'>How Increase Product Load Limit</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#api'>How to Change Api parameter</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#settings'>System settings for application</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#darkmode'>Added Light / Dark mode for better eyesight & battery life</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#prefcat'>Added and manage preference news for ease of access</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#change_lang'>How to change language code?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#change_speech'>How to change speech language code?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release APK</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apk-iOS'>How to Publish iOS App to App Store</a></li>
 
@@ -318,9 +317,7 @@
                                     <li>Go to lib > helper > Constant.dart. here you have to change your API server url and set your JWT key.
                                         <img src="images/app/serverurl.png" alt="news" />
                                     </li>
-                                    <li>Go to lib > helper > Session.dart. here you have to change your JWT key details.
-                                        <img src="images/app/jwt.png" alt="news" />
-                                    </li>
+                                
                                 </ul>
                             </section>
 
@@ -467,40 +464,6 @@
                                     <li>Enable Phone Sign-in method and save.
                                         <img src="images/app/phone.png" alt="news"/>
                                 </ul>
-                            </section>
-
-                            <section id="link">
-                                <h4>Steps to Create Dynamic Link</h4>
-                                <ul>
-                                    <li>Open your firebase console.</li>
-                                    <li>Go to Dynamic Links.
-                                        <img src="images/app/link.png" alt="news"/>
-                                    </li>
-                                    <li>and then Create a domain or use the google provided domain and press the continue button as shown in image below.
-                                        <img src="images/app/link1.png" alt="news" /><br>
-                                        <img src="images/app/link2.png" alt="news"/><br>
-                                        After that your domain created successfully message shown and press finish button.<br><br>
-                                    </li>
-                                    <li>Create new dynamic link as shown in image below. 
-                                        <img src="images/app/link3.png" alt="news"/>
-                                    </li>
-                                    <li>Then write your URL prefix into your Short URL link as shown in image below.
-                                        <img src="images/app/link4.png" alt="news"/>
-                                    </li>
-                                    <li>Next step in set the deep link URL and dynamic link name as shown in image below.
-                                        <img src="images/app/link5.png" alt="news"/>
-                                    </li>
-                                    <li>After select the iOS project into use the deep link as shown in image below.
-                                        <img src="images/app/link6.png" alt="news"/>
-                                    </li>
-                                    <li>Then select your android project into use the deep link and choose the option if your app is not installed as shown in image below.
-                                        <img src="images/app/link7.png" alt="news" />
-                                    </li>
-                                    <li>And the 5th step is optional if you want to use then choose your apppropriate way or press the create button to finally create your dynamic link.
-                                        <img src="images/app/link8.png" alt="news" />
-                                    </li>
-                                </ul>
-                                <hr>
                             </section>
 
                             <section id="apple_fcm">
@@ -751,26 +714,6 @@
                                 <hr>
                             </section>
 
-                            <section id="darkmode">
-                                <h4>Added Light / Dark mode for better eyesight & battery life</h4>
-                                <ul>
-                                    <li>Enjoy dark and light mode to change from settings page.
-                                        <img src="images/app/dark.png">
-                                    </li>
-                                </ul>
-                                <hr>
-                            </section>	
-
-
-                            <section id="prefcat">
-                                <h4>Added preference news for ease of access</h4>
-                                <ul>
-                                    <li>When user can first time login that time if they want to select their preferred categories news to shown in front page then select categories otherwise skip and shown in front page in latest news and if user can manage and add their preferred Categoris from settings page.
-                                        <img src="images/app/prefcat1.png">
-                                    </li>
-                                </ul>
-                                <hr>
-                            </section>
 
                             <section id="change_lang">
                                 <h4>How to change Language code</h4>
@@ -787,7 +730,24 @@
                                     <li>Open lib > Helper > Session.dart file in change your appropriate language code add or remove from here shown in below figure.
                                         <img src="images/app/lang3.png"><br>
                                         <img src="images/app/lang4.png">
+                                        <img src="images/app/lang5.png">
+                                        <img src="images/app/lang6.png">
+                                        <img src="images/app/lang7.png">
                                     </li>
+                                </ul>
+                                <hr>
+                            </section>
+                            
+                            <section id="change_speech">
+                                <h4>How to change Speech Language code</h4>
+                                <ul>
+                                    <li>Here app in change in 5 languages(English,Spanish,Hindi,Portugies,Turkies).</li>
+
+                                    <li>If you want to add or remove any of the speech language then you can change language code in these files.</li>
+                                    <li>Open lib > NewsSubDetails.dart file in change your appropriate language code  and country code add or remove from here shown in below figure.
+                                        <img src="images/app/speech1.png">
+                                    </li>
+                                    
                                 </ul>
                                 <hr>
                             </section>
