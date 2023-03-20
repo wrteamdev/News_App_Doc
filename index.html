@@ -69,7 +69,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#contact_us">Set Contact Us</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="#quiz_app" class="nav-link">News App</a>
+                        <li class="nav-item"><a href="#news_app" class="nav-link">News App</a>
                             <ul class="nav flex-column">
                                 <li class="nav-item"><a class="nav-link" href="#setup">How to setup Flutter</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#appname'>How to change the app name?</a></li>
@@ -98,6 +98,66 @@
                                 <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release APK</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apk-iOS'>How to Publish iOS App to App Store</a></li>
 
+                            </ul>
+                        </li>
+<!--                        <li class="nav-item"><a href="#news_app" class="nav-link">News Web Version</a>-->
+<!--                            <ul class="nav flex-column">-->
+<!--                                <li class="nav-item"><a class="nav-link" href="#setup">How to set up Web Version</a></li>-->
+<!--                                <li class="nav-item"><a class="nav-link" href='#appname'>Where to Set API URL?</a></li>-->
+<!--                                <li class="nav-item"><a class="nav-link" href='#applogo'>How to run Web project?</a></li>-->
+<!--                                <li class="nav-item"><a class="nav-link" href='#appcolor'>How to integrate firebase?</a></li>-->
+<!--                                <li class="nav-item"><a class="nav-link" href='#packagename'>How to change application name?</a></li>-->
+
+<!--                                <li class="nav-item"><a class="nav-link" href='#packagename'>How to change application Logo?</a></li>-->
+<!--                                <li class="nav-item"><a class="nav-link" href='#packagename'>How to Change Footer Area?</a></li>-->
+<!--                                <li class="nav-item"><a class="nav-link" href='#packagename'>How to set Domain URL?</a></li>-->
+<!--                                <li class="nav-item"><a class="nav-link" href='#packagename'>How to run and live site in subfolder?</a></li>-->
+<!--                                <li class="nav-item"><a class="nav-link" href='#packagename'>How to deploy the Site?</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+                        <li class="nav-item"><a href="#news_web_app" class="nav-link">News Web</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howToSetupWebVersion">How to setup Web Version</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#WhereToSetDomainURL">Where to Set API URL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howToIntegrateFirebase">Integrate Firebase with Web App</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howToRunWebProject">How to run Web project</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howToChangeAppName">How to change application name</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howToSetSEO">How set SEO</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howTochangeFooterArea">How to Change Footer Area</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howToChangeAppLogo">How to change application Logo</a>
+                                </li>
+
+                                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#howToChangeIntroSlideImages">How to set Domain URL</a>
+                                </li> -->
+
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#howtosetsubfolder">How to run and live site in subfolder</a>
+                                </li> -->
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howToGenerateReleaseApk">How to deploy the Site</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
@@ -191,7 +251,7 @@
                         </section>
                         <hr class="divider">  
 
-                        <section id="quiz_app">
+                        <section id="news_app">
                             <h3>News App</h3>
 
                             <section id="setup">
@@ -802,11 +862,240 @@
                                 <hr>
                             </section>
 
-
+                            <hr class="divider">
+                            <section id="news_web_app">
+                                <ol>
+                                    <h3>News Web App</h3>
+                                    <span>News Web Version is built with React JS v17.0.2 so you need to setup your Local
+                                        Computer First.</span>
+                                    <br />
+        
+                                    <section id="howToSetupWebVersion">
+                                        <h4>
+                                            <li>How to setup Web Version</li>
+                                        </h4>
+        
+                                        <ol>
+                                            <li>Install Node JS : </li>
+                                            Visit Node JS Official website :
+                                            <a href="https://nodejs.dev/en/learn/how-to-install-nodejs/" target="_blank">https://nodejs.dev/en/learn/how-to-install-nodejs/</a>
+                                            for full installation guide.
+        
+                                            <br>
+                                            <br>
+                                            <!-- If you prefer video tutorials, we recommend this playlist for the full installation process <br>
+                                            <a href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm">https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm</a> -->
+                                        </ol>
+                                        <hr>
+                                    </section>
+        
+                                    <section id="WhereToSetDomainURL">
+                                        <h4>
+                                            <li>Where to set API URL (Admin)</li>
+                                        </h4>
+                                        <ol>
+                                            <li><h6>API Url is your admin panel url which is used to fetch the data from admin panel</h6>
+                                                Open .env file and  change the following details
+                                                <img src="images/web/apiurl.png" alt="News" />
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+        
+                                   
+        
+                                    <section id="howToIntegrateFirebase">
+                                        <h4>
+                                            <li>How to Connect Firebase with your Web News.</li>
+                                        </h4>
+        
+                                        <ol>
+                                            <li>
+                                                First you need to create a Web project inside your Firebase Project.<br>
+                                                For that open your firebase project in console and click on this tiny web icon
+                                                <img src="images/web/firebase1.png" alt="integrate">
+                                                <br>
+                                            </li>
+        
+                                            <li>
+                                                After clicking on Web app you will be able to see this Screen.<br>
+                                                Add your web app name and also make sure you don't forget to check the checkbox.
+                                                <img src="images/web/firebase2.png" alt="integrate">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                Now Copy this Firebase Credentials.
+                                                <img src="images/web/firebase3.png" alt="integrate">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                And paste this your Credentials in <b>src/Firebase.js</b> File.
+                                                <img src="images/web/firebase4.png" alt="integrate">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <h5 class="text-danger">Note : Skip this Step if you have already copy pasted the credentials</h5>
+                                                If you have forget to copy your firebase credentials then you can always find your credentials by following this steps.<br>
+        
+                                                <img src="images/web/firebase-integration.png" alt="integrate">
+                                                <br>
+                                            </li>
+                                    
+                                            <li>
+                                                Now you have to add your Web domain to your Firebase Project<br>
+                                                1. Open your Firebase Project
+                                                2. Go you Authentication/settings/Authorized Domain
+                                                3. Click on Add Domain
+                                                4. One Popup will open add your domain name without http/https in that popup and click submit.
+                                            </li>
+                                                <img src="images/web/firebase-configuration.png" alt="firebase">
+                                            </li>
+                                            <li>Congratulations. You have successfully connected your Web application to your firebase project. Now you are good to go ahead.</li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+        
+                                    <section id="howToRunWebProject">
+                                        <h4>
+                                            <li>How to run this project</li>
+                                        </h4>
+                                        <ol>
+                                            <li>
+                                                Unzip the downloaded code. After unzipping you will have News - Web Code folder.
+                                                <br>
+                                                Open it in Visual Studio Code.
+                                            </li>
+                                            <li>
+                                                Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm i</b>
+                                                <br>
+                                                This will take some time to download a few Packages so wait for a few minutes.
+                                            </li>
+                                            <li> After <b>npm i</b> finishes run this command --> <b>npm start</b>.
+                                                <br>
+                                                This Command will Start the development mode.Check If everything is working fine then your are good to go ahead.
+        
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+                                
+        
+                                    <section id="howToChangeAppName">
+                                        <h4>
+                                            <li>How to change Web Application name</li>
+                                        </h4>
+                                        <ol>
+                                            <li>Change application name for your Web application. Go to
+                                                Admin Panel > Profile and change the value of <b>REACT_APP_NAME</b>
+                                                <img src="images/web/appname.png" alt="News" />
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+                                    <!-- <section id="howToChangeFooterArea">
+                                        <h4>
+                                            <li>How to Set API Url</li>
+                                        </h4>
+        
+                                        <ol>
+                                            <li>
+                                                <h6>API Url is your admin panel url which is used to fetch the data from admin panel</h6>
+                                                Open .env file and  change the following details
+                                                <img src="images/web/apiurl.png" alt="News" />
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section> -->
+                                    <section id="howToSetSEO">
+                                        <h4>
+                                            <li>How to Set SEO Strings</li>
+                                        </h4>
+        
+                                        <ol>
+                                            <li>
+                                                Open .env file and  change the following details
+                                                <img src="images/web/seo.png" alt="News" />
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+                                    <section id="howTochangeFooterArea">
+                                        <h4>
+                                            <li>How Change Footer Area</li>
+                                        </h4>
+                                        <ul class="ul_area">
+                                            <li>
+                                                <img src="images/web/footer.png" alt="News" />
+                                            </li>
+                                        </ul>
+        
+                                        <ol>
+                                            <li>
+                                                Open .env file and  change the following details
+                                                <img src="images/web/footer1.png" alt="News" />
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+        
+                                    <section id="howToChangeAppLogo">
+                                        <h4>
+                                            <li>How to change application logo</li>
+                                        </h4>
+                                        <ol>
+                                            <li>Go to YOUR_APP_FOLDER > public > images folder and replace here your logo with logo.png file. 
+                                                <br>Favicon can also be replaced here with favicon.png file
+                                                <img src="images/web/addLogo.png" alt="News" />
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+                                    
+        
+                                    <!-- <section id="howtosetsubfolder">
+                                        <h4>
+                                            <li>How to live site in subfolder instead of main root folder (optional)</li>
+                                        </h4>
+                                        <ol>
+                                            <li>
+                                                Go to index.js
+                                                <img src="images/web/setsubfoldername.png" alt="News" />
+                                            </li>
+                                            <li>
+                                                Now run this command after set /name is :- <code>npm install -g serve</code>
+                                            </li>
+                                            <li>
+                                                after run <code>npm run build</code>command and uplaod build folder in domain folder which is you set in server.
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section> -->
+        
+        
+                                    <section id="howToGenerateReleaseApk">
+                                        <h4>
+                                            <li>How to deploy the Site</li>
+                                        </h4>
+                                        <ol>
+                                            <li>After all the changes you are ready to deploy your Web applicaiton on Live Server.</li>
+                                            <li>
+                                                Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm run build</b>
+                                                <br>This will take few seconds to build the live and the optimized version of the web application.
+                                            </li>
+                                            <li>
+                                                After the process completion go to public > build folder and upload this files on your live server.<br />
+                                                (only upload <b>build </b>folder's files on server do not upload any other file on server)
+                                            </li>
+                                            <li>If you are facing any deployment related problems you can follow the official document : <a href="https://create-react-app.dev/docs/deployment/" target="_blank">React App Deployment</a></li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+                                </ol>
+                            </section>
                             <section id="support">
                                 <h3>Support</h3>
                                 <p>Its our pleasure to serve our service and support. please contact our support team.</p>
-                                <p>Head of Customer Support : Nikita Bhanderi <a href="https://join.skype.com/invite/VkdXAk8mu9ay" target="_blank" style="color:#3c55d1">Skype Name : Nikita Bhanderi</a></p>
+                                <p>Head of Customer Support : Nikita Bhanderi <a href="https://join.skype.com/invite/qrIHyaH38j1n" target="_blank" style="color:#3c55d1">Skype Name : Devanshi Gor</a></p>
                                 <p>To help our customers, we constantly be in touch with every customer if they need any assistance regarding our product. 
                                     We offer our customers a support from  <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) – We are a Team located in India – Asia.</strong></p>
                                 <p>Typically we reply our customers for all the questions and queries within 24 hours of time via comments, support forum or emails.</p>
