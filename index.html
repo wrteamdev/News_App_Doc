@@ -78,7 +78,7 @@
                                 <li class="nav-item"><a class="nav-link" href='#packagename'>How to change package name?</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#assetimage">How to change images in asset?</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#font">How to change app font?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#serverurl'>How to change server url to application?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#serverurl'>How to set JWT key and change Server URL of application?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#yrcountrycode'>How to change your initial country code?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#create_fcm'>How to create Firebase Project for Android and iOS</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#email_fcm'>Authenticate with Firebase Using Email and Password</a></li>
@@ -87,15 +87,15 @@
                                 <li class="nav-item"><a class="nav-link" href='#phone_fcm'>Authenticate with Firebase Using Phone(Otp)</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apple_fcm'>Authenticate with Firebase Using Apple Login</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#link'>How to Create Dynamic Link Using Firebase</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#fcm'>How to Integrate Firebase Cloud Messaging in app?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#admob'>How to use admob in app?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#fbAd'>How to use facebook Ads in app?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#limit'>How Increase Product Load Limit</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#api'>How to Change Api parameter</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#settings'>System settings for application</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#change_lang'>How to change language code?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#fcm'>How to Integrate Firebase Cloud Messaging in App?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#admob'>How to use admob in App?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#fbAd'>How to use facebook Ads in App?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#limit'>How Increase Product Load Limit?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#api'>How to Change APi parameter?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#settings'>System Settings for Application?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#change_lang'>How to Change Language?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#change_speech'>How to change speech language code?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release APK</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release APK?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apk-iOS'>How to Publish iOS App to App Store</a></li>
 
                             </ul>
@@ -263,8 +263,8 @@
                                         <a href="https://flutter.dev/docs/get-started/install/windows">Flutter sdk Here.</a>
                                         <img src="images/app/setup.png" alt="Flutter UI Component" />
                                     </li>
-                                    <li>Extract the zip file and copy flutter folder into your desired installation location for the Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like C:\Program Files\).</li>
-                                    <li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking. 
+                                    <li>Extract the zip file and copy flutter Folder into your desired installation location for the Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like C:\Program Files\).</li>
+                                    <li>Inside Flutter Folder find flutter_console.bat. Start it by double-clicking. 
                                         <img src="images/app/setup2.png" alt="Flutter UI Component"/>
                                     </li>
                                     <li>Now set your enviournment variable.</li>
@@ -288,14 +288,14 @@
                             </section>
 
                             <section id="appname">
-                                <h4>How to change AppName?</h4>
+                                <h4>How to change App Name?</h4>
                                 <ul>
-                                    <li>Open Helper > Constant.dart and chnage that string as shown as below fig.
+                                    <li>Open lib > utils > Constant.dart and change that string as shown as below image
                                         <img src="images/app/appname.png" alt="news" />
                                     </li>
-                                    <li>For Android, to change label that is shown below android app icon, open android > app > src > main > open mainfest.xml and inside that label change that string as shown in below fig. 
+                                    <li>For Android, to change label that is shown below android app icon, open android > app > src > main > open AndroidManifest.xml and inside that label change that string as shown in below image 
                                         <img src="images/app/appname1.png" alt="news" />
-                                    <li>For iOS, to change label that is shown below ios app icon, open ios > Runner > Info.plist inside that <b>CFBundleName</b> change that string as shown in below fig. 
+                                    <li>For iOS, to change label that is shown below ios app icon, open ios > Runner > Info.plist inside that <b>CFBundleDisplayName</b> &  <b>CFBundleName</b> change that string as shown in below image 
                                         <img src="images/app/appname2.png" alt="news" />
                                     </li>
                                 </ul>
@@ -317,13 +317,14 @@
                             </section>
 
                             <section id="appcolor">
-                                <h4>How to Change app color</h4>
+                                <h4>How to Change App color</h4>
                                 <ul>
-                                    <li>To change app color, your need to add your color code in  lib > Helper.dart > color.dart</li>
-                                    <li>In flutter color code start from 0xff so your have to add your color hex after this 4 digit.your can change primary,second,fontcolor as shown in below image.
-                                        <img src="images/app/appcolor.png" alt="news" />
-                                    </li>
-                                </ul>
+                                    <li>To change App color, your need to add your color code in lib > ui > styles > colors.dart</li>
+                                    <li>In flutter color code start from 0xff so you have to add your hex color after <b>0xff</b>.your can change primary,second,fontcolor as shown in below image.</li>
+                                    <img src="images/app/appcolor.png" alt="news" />
+                                    <li>And set that colors in appTheme.dart file there according to Light And Dark Theme for your App</li>
+                                    <img src="images/app/appThemecolor.png" alt="news" />
+                               </ul>
                                 <hr>
                             </section>
 
@@ -345,18 +346,19 @@
                                     <li>Now press ctrl + shift + R and replace old packagename with your new packagename. 
                                         <img src="images/app/packagename_5.png" alt="news" />
                                     </li>
-                                    <li>For ios open ios > Runner > info.plist > there is the key CFBundleIdentifier change the string value for that as shown in below.
+                                    <img src="images/app/packagename_7.png" alt="news" />
+                                    <!-- <li>For ios open ios > Runner > info.plist > there is the key CFBundleIdentifier change the string value for that as shown in below.
                                         <img src="images/app/packagename_6.png" alt="news" /><br/>
                                         <img src="images/app/packagename_7.png" alt="news" />
-                                    </li>
+                                    </li> -->
                                 </ul>
                                 <hr>
                             </section>
 
                             <section id="assetimage">
-                                <h4>How to Change Images in app</h4>
+                                <h4>How to Change Images in App</h4>
                                 <ul>
-                                    <li>Go to assets > images folder. Here you have to change all image to your app image according to different folder different dimension images is used. 
+                                    <li>Go to <b>assets</b> > <b>images</b> Folder. Here you have to change all image for your App images according to different Folder different dimension images used & mention other folders of images in <b>pubspec.yaml</b> file as shown below. 
                                         <img src="images/app/img.png" alt="news" />
                                     </li>
                                 </ul>
@@ -364,9 +366,9 @@
                             </section>
 
                             <section id="font">
-                                <h4>How to Change App font</h4>
+                                <h4>How to Change App Font</h4>
                                 <ul>
-                                    <li>Go to Assets > font folder .here you have to copy your font.now go to pubspec.yaml in font section change your font name as shown in below image.
+                                    <li>Go to <b>assets</b> > <b>font</b> Folder. Here you have to copy your font. Now go to <b>pubspec.yaml</b> in fonts section change your font name as shown in below image.
                                         <img src="images/app/font.png" alt="news" />
                                     </li>
                                 </ul>
@@ -374,19 +376,19 @@
                             </section>
 
                             <section id="serverurl">
-                                <h4>How to set JWT key and change server url</h4>
+                                <h4>How to set JWT key and change Server URL</h4>
                                 <ul>
-                                    <li>Go to lib > helper > Constant.dart. here you have to change your API server url and set your JWT key.
+                                    <li>Go to lib > utils > Constant.dart. Here you have to change your admin panel URL and set your jwtKey.</li> 
+                                    <li>jwtKey is just like password. so, you can create by your own. just make sure it should be same in Admin Panel > Settings > System Configurations > JWT KEY.
                                         <img src="images/app/serverurl.png" alt="news" />
-                                    </li>
-                                
+                                    </li>                                
                                 </ul>
                             </section>
                             
                              <section id="yrcountrycode">
                                 <h4>How to change your initial country code</h4>
                                 <ul>
-                                    <li>Go to lib > helper > Constant.dart. here you can change your default country code.
+                                    <li>Go to lib > utils > Constant.dart. here you can change your default country code.
                                         <img src="images/app/chnageConCode.png" alt="news" />
                                     </li>
                                 
@@ -394,9 +396,9 @@
                             </section>
 
                             <section id="create_fcm">
-                                <h4>How to Create firebase project</h4>
+                                <h4>How to Create Firebase project</h4>
                                 <ul>
-                                    <li>Go to firebase console.and then click on add project.</li>
+                                    <li>Go to Firebase console.and then click on add project.</li>
                                     <li>after that below given step will come. here you have to enter your project details.Enter your project name and then press on continue.then select email and then press continue. 
                                         <img src="images/app/create1.png" alt="news" /><br>
                                         <img src="images/app/create11.png" alt="news" /><br>
@@ -411,7 +413,7 @@
                                     <li>after that below given screen will appear, in that you have to enter your packagename and appname and then click register app.
                                         <img src="images/app/create4.png" alt="news" />
                                     </li>
-                                    <li>click on android > gradlew in right click on open in Terminal fig. shown in below. 
+                                    <li>click on android > gradlew in right click on open in Terminal image shown in below. 
                                         <img src="images/app/sha1.png">
                                     </li>
                                     <li>write in terminal below command and debug SHA will print copy that and add it in firebase console.
@@ -489,10 +491,10 @@
                                         <b>Edit Your Resources and Manifest</b>
                                     </li>
                                     <li>Create strings for your Facebook app ID and for those needed to enable Chrome Custom Tabs. Also, add FacebookActivity to your Android manifest.</li>
-                                    <li>Open your app >res >values >strings.xml file.
+                                    <li>Open android > app > src > main > res > values > strings.xml file.
                                         <img src="images/app/fb3.png">
                                     </li>
-                                    <li>Open the app >manifest >AndroidManifest.xml file.</li>
+                                    <li>Open android > app > src > main > AndroidManifest.xml File.</li>
                                     <li>Add the following meta-data element, an activity for Facebook
                                         <img src="images/app/fb2.png">
                                     </li>
@@ -513,10 +515,10 @@
                                     <li>Create iOS application here.
                                         <img src="images/app/fb_ios1.png">
                                     </li>
-                                    <li>Add your iOS Bundle Id as shown as below fig.
+                                    <li>Add your iOS Bundle Id as shown as below image
                                         <img src="images/app/fb_ios2.png">
                                     </li>
-                                    <li> Copy code shown in below fig. and paste into Info.plist file.</li>
+                                    <li> Copy code shown in below image and paste into Info.plist file.</li>
                                     <li>and after Configure your Info.plist file.
                                         <img src="images/app/fb_ios3.png"><br>
                                         <img src="images/app/fb_ios4.png"><br>
@@ -588,15 +590,15 @@
                             </section>
 
                             <section id="fcm">
-                                <h4>How to Integrate Firebase Cloud Messaging in app?</h4>
+                                <h4>How to Integrate Firebase Cloud Messaging in App?</h4>
                                 <p class="text-danger"><b>Integrating Firebase Cloud Messaging</b></p>
                                 <ul>
 
-                                    <li>For FCM Notification first you have to register your application with firebase.</li>
+                                    <li>For Firebase Cloud Messaging Notification, first you have to register your application with Firebase.</li>
                                     <li><a href='#create_fcm'>Create Firebase Project for Application.</a>  If you already created firebase project then you dont have to do that again.</li>
                                     <li>Firebase dependency, service class and all nacessary class are already included in project.</li>
                                     <li>So, you dont have to do extra code here.</li>
-                                    <li>Just download <b>Google-service.json</b> and replace with existing file.</li>
+                                    <li>Just download <b>Google-service.json</b> and replace with existing File.</li>
                                 </ul>
                                 <h4>Sending Messages from PHP Backend</h4>
                                 <ul>
@@ -677,10 +679,9 @@
 
 
                             <section id="admob">
-                                <h4>Set up admob in app</h4>
+                                <h4>Set up admob in App</h4>
                                 <ul>
-                                    <li>Add an android app.</li>
-                                    <li>In the  <a href="https://apps.admob.com" style="color:red">Admob console,</a> click add android app from the Apps menu.
+                                     <li>In the  <a href="https://apps.admob.com" style="color:red">Admob console,</a> click add android app from the Apps menu.
                                         <img src="images/app/admob1.png" alt="news" />
                                     </li>
                                     <li>Enter your app name and Enabling user metrics is not necessary to complete this codelab. However, we recommend that you do because it allows you to understand user behavior in more detail and click on ADD APP button. 
@@ -706,7 +707,7 @@
                             </section>
                             
                             <section id="fbAd">
-                                <h4>Set up Facebook Ads in app</h4>
+                                <h4>Set up Facebook Ads in App</h4>
                                 <ul>
                                     <li> <a href="https://developers.facebook.com" style="color:red">Go to Facebook for Developers</a>.</li>
                                    
@@ -722,7 +723,7 @@
                                     <li>Fill Android App details and click on next button shown in below image.
                                         <img src="images/app/fbAd5.png" alt="news" />
                                     </li>
-                                    <li> Add your payment account details for facebook live ads shown in app.
+                                    <li> Add your payment account details for facebook live ads shown in App.
                                         <img src="images/app/fbAd6.png" alt="news" />
                                     </li>
                                     <li>After that add banner,interstitial,native ads shown in below image.
@@ -733,9 +734,9 @@
                                         <img src="images/app/fbAd8.png" alt="news" /><br>
                                          <img src="images/app/fbAd9.png" alt="news" />
                                     </li>
-                                    <li>Note:When your app live that time remove testing id from code shown in below image.
+                                    <li>Note: Remove following mentioned line from Code When you are going to upload your app to Play Store or AppStore.
                                     <img src="images/app/fbAd10.png" alt="news" /><br>
-                                         <img src="images/app/fbAd11.png" alt="news" />
+                                         <!-- <img src="images/app/fbAd11.png" alt="news" /> -->
                                     </li>
                                     
                                 </ul>
@@ -745,18 +746,20 @@
                             <section id="limit">
                                 <h4>How to Increase Product Load Limit</h4>
                                 <ul>
-                                    <li>you can chnage at a time when request send to server how many item will fetch.go to lib > Helper > Constant.dart file.</li>
+                                    <li>you can change at a time when request send to server how many item will fetch at once.</li>
+                                    <li>Go to lib > utils > Constant.dart File.</li>
                                     <li>Please check below given image.
                                         <img src="images/app/limit.png">
                                     </li>
+                                    <li>& It is extended for some APIs like - categoryCubit.dart, bookmarkCubit.dart, LikeAndDislikeCubit.dart, bookmarkCubit.dart.</li>
                                 </ul>
                                 <hr>
                             </section>
 
                             <section id="api">
-                                <h4>Change Api Parameter</h4>
+                                <h4>Change APi Parameter</h4>
                                 <ul>
-                                    <li>You can change or add api parameter from lib > Helper > String.dart. here all list of api and api paramater is listed that is used in app.
+                                    <li>You can change or add api parameter from lib > utils > api.dart. Here all list of api and api paramater is listed that is used in App.
                                         <img src="images/app/api.png" alt="news" />
                                     </li>
                                 </ul>
@@ -773,7 +776,8 @@
                                     <li>Sub Category Mode: Enable and Disable sub category from admin panel when you want to show or not sub category in application .</li>
                                     <li>Live Streaming News Mode: Enable and Disable live news from admin panel when you want to show or not live news in application.</li>
                                     <li>Breaking News Mode: Enable and Disable breaking news from admin panel when you want to show or not breaking news in application.
-                                        <img src="images/app/settings.png">
+                                        <img src="images/app/settings1.png">
+                                        <img src="images/app/settings2.png">
                                     </li>
                                     <li>Settings > Privacy Policy. </li>
                                     <li>Privacy Policy:  Add Your news Privacy Policy It Will Reflect in Application Privacy Policy.</li>
@@ -786,11 +790,19 @@
                                 <hr>
                             </section>
 
-
                             <section id="change_lang">
+                                <h4>How to change Language</h4>
+                                <ul>
+                                    <li>Go to Admin Panel > Language > Add Languages with Flag & Language JSON File</li>
+                                    <li> set your default Language & it will be reflected @App side immediately.</li>
+                                    <img src="images/app/lang.png">
+                                </ul>
+                                <hr>
+                            </section>
+                           <!--  <section id="change_lang">
                                 <h4>How to change Language code</h4>
                                 <ul>
-                                    <li>Here app in change in 5 languages(English,Spanish,Hindi,Portugies,Turkies).</li>
+                                    <li>Here app in change in 5 languages(English,Spanish,Hindi,Portugies,Turkish).</li>
 
                                     <li>If you want to add or remove any of the language then you can change language code in these files.</li>
                                     <li>Open lib > Helper > Demo_Localizations.dart file in change your appropriate language code add or remove from here shown in below figure.
@@ -808,21 +820,20 @@
                                     </li>
                                 </ul>
                                 <hr>
-                            </section>
+                            </section> -->
                             
-                            <section id="change_speech">
+                          <!--   <section id="change_speech">
                                 <h4>How to change Speech Language code</h4>
                                 <ul>
-                                    <li>Here app in change in 5 languages(English,Spanish,Hindi,Portugies,Turkies).</li>
+                                    <li>Here app in change in 5 languages(English,Spanish,Hindi,Portugies,Turkish).</li>
 
                                     <li>If you want to add or remove any of the speech language then you can change language code in these files.</li>
                                     <li>Open lib > NewsSubDetails.dart file in change your appropriate language code  and country code add or remove from here shown in below figure.
                                         <img src="images/app/speech1.png">
-                                    </li>
-                                    
+                                    </li>                                    
                                 </ul>
                                 <hr>
-                            </section>
+                            </section> -->
 
                             <section id="apk">
                                 <h4>Generate Release APK</h4>
@@ -844,7 +855,7 @@
                             <section id="apk-iOS">
                                 <h4>Steps to Publish iOS App to App Store</h4>
                                 <ul>
-                                    <li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded From Firebase Project]  inside folder named Runner.
+                                    <li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded From Firebase Project]  inside Folder named Runner.
                                         <img src="images/app/ios1.png" alt="news"/>
                                     </li>
                                     <li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.
@@ -962,7 +973,7 @@
                                         </h4>
                                         <ol>
                                             <li>
-                                                Unzip the downloaded code. After unzipping you will have News - Web Code folder.
+                                                Unzip the downloaded code. After unzipping you will have News - Web Code Folder.
                                                 <br>
                                                 Open it in Visual Studio Code.
                                             </li>
@@ -1044,7 +1055,7 @@
                                             <li>How to change application logo</li>
                                         </h4>
                                         <ol>
-                                            <li>Go to YOUR_APP_FOLDER > public > images folder and replace here your logo with logo.png file. 
+                                            <li>Go to YOUR_APP_FOLDER > public > images Folder and replace here your logo with logo.png file. 
                                                 <br>Favicon can also be replaced here with favicon.png file
                                                 <img src="images/web/addLogo.png" alt="News" />
                                             </li>
@@ -1055,7 +1066,7 @@
         
                                     <!-- <section id="howtosetsubfolder">
                                         <h4>
-                                            <li>How to live site in subfolder instead of main root folder (optional)</li>
+                                            <li>How to live site in subfolder instead of main root Folder (optional)</li>
                                         </h4>
                                         <ol>
                                             <li>
@@ -1066,7 +1077,7 @@
                                                 Now run this command after set /name is :- <code>npm install -g serve</code>
                                             </li>
                                             <li>
-                                                after run <code>npm run build</code>command and uplaod build folder in domain folder which is you set in server.
+                                                after run <code>npm run build</code>command and uplaod build Folder in domain Folder which is you set in server.
                                             </li>
                                         </ol>
                                         <hr>
@@ -1084,8 +1095,8 @@
                                                 <br>This will take few seconds to build the live and the optimized version of the web application.
                                             </li>
                                             <li>
-                                                After the process completion go to public > build folder and upload this files on your live server.<br />
-                                                (only upload <b>build </b>folder's files on server do not upload any other file on server)
+                                                After the process completion go to public > build Folder and upload this files on your live server.<br />
+                                                (only upload <b>build </b>Folder's files on server do not upload any other file on server)
                                             </li>
                                             <li>If you are facing any deployment related problems you can follow the official document : <a href="https://create-react-app.dev/docs/deployment/" target="_blank">React App Deployment</a></li>
                                         </ol>
