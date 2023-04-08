@@ -144,6 +144,15 @@ form {
 
 img {
     vertical-align: inherit;
+    border:1px solid #000000;
+}
+
+header img{
+    border:none;
+}
+
+video{
+    border: 1px solid #000000;
 }
 
 a, a:focus {

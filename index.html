@@ -79,12 +79,13 @@
                                 <li class="nav-item"><a class="nav-link" href="#assetimage">How to change images in asset?</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#font">How to change app font?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#serverurl'>How to set JWT key and change Server URL of application?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#settings'>System Settings for Application?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#yrcountrycode'>How to change your initial country code?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#create_fcm'>How to create Firebase Project for Android and iOS</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#email_fcm'>Authenticate with Firebase Using Email and Password</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#google_fcm'>Authenticate with Firebase Using Google Sign-In</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#fb_fcm'>Authenticate with Firebase Using Facebook Login</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#phone_fcm'>Authenticate with Firebase Using Phone(Otp)</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#phone_fcm'>Authenticate with Firebase Using Phone(OTP)</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apple_fcm'>Authenticate with Firebase Using Apple Login</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#link'>How to Create Dynamic Link Using Firebase</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#fcm'>How to Integrate Firebase Cloud Messaging in App?</a></li>
@@ -93,7 +94,6 @@
                                 <li class="nav-item"><a class="nav-link" href='#unityAd'>How to use unity Ads in App?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#limit'>How Increase Product Load Limit?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#api'>How to Change APi parameter?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#settings'>System Settings for Application?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#change_lang'>How to Change Language?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#change_speech'>How to change speech language code?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release APK?</a></li>
@@ -217,7 +217,7 @@
                                 <h4>Set System Configurations</h4>
                                 <p>Change the System Timezone, App Name, JWT KEY & App Logo of News admin panel. And also Enable / Disable Category, Subcategory, Breaking News, Live Streaming Comments.</p>
                                 <p>JWT KEY is just like password & You can create your own. It should be same in News app.</p>
-                                <img src="images/panel/system-configurations.png" alt='System Configurations' title='System Configurations'>
+                                <a href="images/panel/system-configurations.png" target="_blank"><img src="images/panel/system-configurations.png" alt='System Configurations' title='System Configurations'></a>
                                 <hr> 
                             </section>
 
@@ -381,8 +381,25 @@
                                         <img src="images/app/serverurl.png" alt="news" />
                                     </li>                                
                                 </ul>
-                            </section>
+                            </section> 
                             
+                            <section id="settings">                               
+                                <h4>System Settings for Application</h4>
+                                <ul>
+                                    <li>First login to admin panel.</li>
+                                    <li>Settings > System Configuration.</li>
+                                    <li>Category Mode: Enable and Disable category from admin panel when you want to show or not category in application .</li>
+                                    <li>Subcategory Mode: Enable and Disable sub category from admin panel when you want to show or not sub category in application .</li>
+                                    <li>Breaking News Mode: Enable and Disable breaking news from admin panel when you want to show or not breaking news in application.
+                                    <li>Live Streaming News Mode: Enable and Disable live news from admin panel when you want to show or not live news in application.</li>
+                                    <li>Commnents Mode: Enable and Disable comments from admin panel when you want to show or not comments in application.</li>
+                                       <img src="images/app/settings1.png">
+                                        <img src="images/app/settings2.png">
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
                              <section id="yrcountrycode">
                                 <h4>How to change your initial country code</h4>
                                 <ul>
@@ -417,7 +434,7 @@
                                     <li>write in terminal below command and debug SHA will print copy that and add it in firebase console.
                                         <img src="images/app/sha2.png">
                                     </li>
-                                    <li>after that below given screen will appear, now click on download google-services.json.after that open the file and copy content of file and replace in android > app > google-service.json.
+                                    <li>after that below given screen will appear, now click on download google-services.json.after that add this file in android > app Folder.
                                         <img src="images/app/create7.png" alt="news" /><br/>
                                         <img src="images/app/create8.png" alt="news" />
                                     </li>
@@ -430,7 +447,7 @@
                                         <img src="images/app/create111.png" alt="news" /><br>
                                         <img src="images/app/create112.png" alt="news" />
                                     </li>
-                                    <li>now copy the content of that file and replace in ios > Runner > GoogleServie-info.plist. 
+                                    <li>now copy the content of that file and replace in ios > Runner > GoogleService-info.plist. 
                                         <img src="images/app/create113.png" alt="news" /><br>
                                     </li>
                                     <li>now press next next on firebase console and that's it your project is created on ios.</li>
@@ -571,18 +588,25 @@
                                     <li>Then write your URL prefix into your Short URL link as shown in image below.
                                         <img src="images/app/link4.png" alt="news"/>
                                     </li>
-                                    <li>Next step in set the deep link URL and dynamic link name as shown in image below.
+                                    <li>Next step in set the dynamic link URL and dynamic link name as shown in image below.
                                         <img src="images/app/link5.png" alt="news"/>
                                     </li>
-                                    <li>After select the iOS project into use the deep link as shown in image below.
+                                    <li>After select the iOS project into use the dynamic link as shown in image below.
                                         <img src="images/app/link6.png" alt="news"/>
                                     </li>
-                                    <li>Then select your android project into use the deep link and choose the option if your app is not installed as shown in image below.
+                                    <li>Then select your android project into use the dynamic link and choose the option if your app is not installed as shown in image below.
                                         <img src="images/app/link7.png" alt="news" />
                                     </li>
                                     <li>And the 5th step is optional if you want to use then choose your apppropriate way or press the create button to finally create your dynamic link.
                                         <img src="images/app/link8.png" alt="news" />
                                     </li>
+                                    <li>After successful creation of Dynamic Link, Add mentioned Specific URL Patterns in Allowlist there. Reference <a href="https://support.google.com/firebase/answer/9021429">Here</a></li>
+                                    <li>Click on video below.</li>
+                                    <a href="images/app/dynamiclink_allowlist.mov" target="_blank">
+                                    <video width="340" height="140" autoplay>                                        
+                                            <source src="images/app/dynamiclink_allowlist.mov">
+                                    Your browser does not support the video tag.                                      
+                                    </video></a>
                                 </ul>
                                 <hr>
                             </section>
@@ -793,30 +817,6 @@
                                 <hr>
                             </section>
 
-                            <section id="settings">                               
-                                <h4>System Settings for Application</h4>
-                                <ul>
-                                    <li>First login to admin panel.</li>
-                                    <li>Settings > System Configuration.</li>
-                                    <li>Category Mode: Enable and Disable category from admin panel when you want to show or not category in application .</li>
-                                    <li>Commnents Mode: Enable and Disable comments from admin panel when you want to show or not comments in application.</li>
-                                    <li>Sub Category Mode: Enable and Disable sub category from admin panel when you want to show or not sub category in application .</li>
-                                    <li>Live Streaming News Mode: Enable and Disable live news from admin panel when you want to show or not live news in application.</li>
-                                    <li>Breaking News Mode: Enable and Disable breaking news from admin panel when you want to show or not breaking news in application.
-                                        <img src="images/app/settings1.png">
-                                        <img src="images/app/settings2.png">
-                                    </li>
-                                    <li>Settings > Privacy Policy. </li>
-                                    <li>Privacy Policy:  Add Your news Privacy Policy It Will Reflect in Application Privacy Policy.</li>
-                                    <li>Terms Conditions:  Add Your news Terms Conditions It Will Reflect in Application Terms of Service.</li>
-                                    <li>About Us:  Add Your Company Details It Will Reflect in Application About Us.</li>
-                                    <li>Contact us:  Add Your news Company Contact Details It Will Reflect in Application Contact Us .
-                                        <img src="images/app/privacy.png">
-                                    </li>
-                                </ul>
-                                <hr>
-                            </section>
-
                             <section id="change_lang">
                                 <h4>How to change Language</h4>
                                 <ul>
@@ -882,7 +882,7 @@
                             <section id="apk-iOS">
                                 <h4>Steps to Publish iOS App to App Store</h4>
                                 <ul>
-                                    <li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded From Firebase Project]  inside Folder named Runner.
+                                    <li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded From Firebase Project] inside Folder named Runner.
                                         <img src="images/app/ios1.png" alt="news"/>
                                     </li>
                                     <li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.
