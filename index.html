@@ -68,6 +68,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#pp">Set Privacy Policy</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#tc">Set Terms Conditions</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#other_pages">Set Other Pages</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#addManage_roles">Add & Assign Roles to Users</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#news_app" class="nav-link">News App</a>
@@ -93,10 +94,11 @@
                                 <li class="nav-item"><a class="nav-link" href='#admob'>How to use admob in App?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#fbAd'>How to use facebook Ads in App?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#unityAd'>How to use unity Ads in App?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#limit'>How Increase Product Load Limit?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#adsInterval'>How to Enable/Disable Weather Data for HomeScreen, Interval for Survey Questions & Interval for Ads types?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#limit'>How to Increase Product Load Limit?</a></li>
+                                <li class="nav-item"><a class="nav-link" href='#removeTestLogin'>How to Remove test credentials in login screen?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#api'>How to Change APi parameter?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#change_lang'>How to Change Language?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#change_speech'>How to change speech language code?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release APK?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apk-iOS'>How to Publish iOS App to App Store</a></li>
 
@@ -208,21 +210,21 @@
                             
                              <section id="featured-section">
                                 <h4>Featured Section</h4>
-                                <p>Set featured section for all active language. If you not set any featured section for perticular language than frontend (in app+web) homepage will be blank.</p>
+                                <p>Set featured section for all active languages.<p style="color: red;">If you haven't set a featured section for a particular language, the frontend will have a blank homepage(app+web).</p></p>
                                 <img src="images/panel/featured_sections.png"/>
                                 <hr>  
                             </section>
 
                             <section  id="pp">
                                 <h4>Set Privacy Policy</h4>
-                                <p>Set Privacy Policy for your website and app. (Create different page for your different activated language)</p>
+                                <p>Set Privacy Policy for your website and app.<p style="color: red;">It is Compulsory to add Privacy Policy for App.</p> (Create different page for your different activated language)</p>
                                 <img src="images/panel/pp.png"/>
                                 <hr> 
                             </section>
 
                             <section  id="tc">
                                 <h4>Set Terms Conditions</h4>
-                                <p>Set Terms Conditions for your website and app. (Create different page for your different activated language)</p>
+                                <p>Set Terms Conditions for your website and app.<p style="color: red;">It is Compulsory to add Terms Conditions for App.</p> (Create different page for your different activated language)</p>
                                 <img src="images/panel/tc.png"/>					
                                 <hr>  
                             </section>
@@ -232,8 +234,15 @@
                                 <p>Set and manage your content for app. (Create different page for your different activated language)</p>
                                 <img src="images/panel/pages.png"/>					
                                 <hr>
-                            </section>
+                            </section> 
 
+                            <section id="addManage_roles">
+                                <h4>Add & Assign Roles to Users</h4>
+                                <p>Add user Roles & Assign to Specific User from User List Tab, to Enable Create & Manage News options in App [You will find Create News & Manage News in Profile Settings screen in App].</p>
+                                <img src="images/panel/addRoles.png"/>	
+                                <img src="images/panel/assignRoles.png"/>					
+                                <hr>
+                            </section>
                           
                         </section>
                         <hr class="divider">  
@@ -776,8 +785,19 @@
                                          </ul>
                             </section>
 
+                            <section id="adsInterval">
+                                <h4>How to Enable/Disable Weather Data for HomeScreen, Interval for Survey Questions & Interval for Ads types?</h4>
+                                <ul>
+                                     <li>you may find variables @ lib > utils > Constant.dart File.</li>
+                                      <li>Please check image given below.
+                                        <img src="images/app/constantFile.png">
+                                    </li>
+                                </ul>
+                                <hr>
+                            </section>
+
                             <section id="limit">
-                                <h4>How to Increase Product Load Limit</h4>
+                                <h4>How to Increase Product Load Limit?</h4>
                                 <ul>
                                     <li>you can change at a time when request send to server how many item will fetch at once.</li>
                                     <li>Go to lib > utils > Constant.dart File.</li>
@@ -785,6 +805,15 @@
                                         <img src="images/app/limit.png">
                                     </li>
                                     <li>& It is extended for some APIs like - categoryCubit.dart, bookmarkCubit.dart, LikeAndDislikeCubit.dart, bookmarkCubit.dart.</li>
+                                </ul>
+                                <hr>
+                            </section>
+
+                        <section id="removeTestLogin">
+                                <h4>How to Remove test credentials in login screen?</h4>
+                                <ul>
+                                     <li>Go to lib > ui > screens > auth > loginScreen.dart File & comment or remove lines mentioned below.</li>
+                                         <img src="images/app/removeTestCredentials.png">
                                 </ul>
                                 <hr>
                             </section>
@@ -812,6 +841,7 @@
                            <section id="apk">
                                 <h4>Generate Release APK</h4>
                                 <ul>
+                                    <li>Before Generating apk, Change values at android > key.properties File according to your generated Key.</li>
                                     <li>In you android studio, right click on you android module of you flutter project.there is option flutter, click on that inside open in new module.then generate release apk from that new module.
                                         <img src="images/app/apk1.png" alt="news" />
                                     </li>
@@ -1048,7 +1078,7 @@
                             <section id="support">
                                 <h3>Support</h3>
                                 <p>Its our pleasure to serve our service and support. please contact our support team.</p>
-                                <p>Head of Customer Support :<a href="https://join.skype.com/invite/qrIHyaH38j1n" target="_blank" style="color:#3c55d1"> Devanshi Gor</a></p>
+                                <p>Head of Customer Support : <a href="https://join.skype.com/invite/qrIHyaH38j1n" target="_blank" style="color:#3c55d1">Devanshi Gor</a></p>
                                 <p>To help our customers, we constantly be in touch with every customer if they need any assistance regarding our product. 
                                     We offer our customers a support from  <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) – We are a Team located in India – Asia.</strong></p>
                                 <p>Typically we reply our customers for all the questions and queries within 24 hours of time via comments, support forum or emails.</p>
