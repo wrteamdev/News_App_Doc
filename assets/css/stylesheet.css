@@ -5,7 +5,7 @@
    Template URL: http://demo.harnishdesign.net/html/idocs
    Author URL: https://themeforest.net/user/harnishdesign
    File Description : Main css file of the template
-        
+
 =================================================
   Table of Contents
 =================================================
@@ -33,7 +33,7 @@
 
 =======================================================*/
 /* =================================== */
-/*  1. Basic Style 
+/*  1. Basic Style
 /* =================================== */
 body, html {
     height: 100%;
@@ -1959,7 +1959,7 @@ hr {
     color: #ddd;
 }
 
-.nav:not(.nav-pills) .nav-item .nav-link.active, .nav:not(.nav-pills) .nav-item .nav-link:hover {  
+.nav:not(.nav-pills) .nav-item .nav-link.active, .nav:not(.nav-pills) .nav-item .nav-link:hover {
     color: #ff3f4c;
 }
 
@@ -2473,7 +2473,7 @@ hr {
     z-index: 1030;
     bottom: 8px;
     right: 10px;
-    background-color: #08B9B7;
+    background-color: red;
     text-align: center;
     color: #fff;
     font-size: 14px;
@@ -2975,5 +2975,5 @@ section img{
 }
 
 text-theme{
-    color: #08B9B7; 
+    color: #08B9B7;
 }
