@@ -98,7 +98,6 @@
                                 <li class="nav-item"><a class="nav-link" href='#unityAd'>How to use unity Ads in App?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#adsInterval'>How to Enable/Disable Weather Data for HomeScreen, Interval for Survey Questions & Interval for Ads types?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#limit'>How to Increase Product Load Limit?</a></li>
-                                <li class="nav-item"><a class="nav-link" href='#removeTestLogin'>How to Remove test credentials in login screen?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#api'>How to Change APi parameter?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#change_lang'>How to Change Language?</a></li>
                                 <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release APK?</a></li>
@@ -750,7 +749,9 @@
                                     <li> Then add another unit add shown in below image and Same as above create Interstitial ads and native ads.
                                         <img src="images/app/admob6.png" alt="news" />
                                     </li>
-                                    <li>Same as Add iOS app and same as add units in iOS app.</li>
+                                    <li>Also add Google Admob ads appId as a value for <b>android:name="com.google.android.gms.ads.APPLICATION_ID"</b> in android/app/src/main/AndroidManifest.xml file.</li>
+                                    <li>Add iOS App and add units in iOS app in same way.</li>
+                                    <li>Also add Google Admob ads appId as a value for <b>GADApplicationIdentifier</b> in ios/Runner/info.plist File.</li>
                                     <li>Add your ad unit id in admin panel Settings -> System Configurations.
                                         <img src="images/app/admob7.png" alt="news" />
                                     </li>
@@ -823,7 +824,7 @@
                             </section>
 
                             <section id="adsInterval">
-                                <h4>How to Enable/Disable Weather Data for HomeScreen, Interval for Survey Questions & Interval for Ads types?</h4>
+                                <h4>How to Enable/Disable Weather Data for HomeScreen, Enable/Disable Facebook login, Interval for Survey Questions & Interval for Ads types?</h4>
                                 <ul>
                                      <li>you may find variables @ lib > utils > Constant.dart File.</li>
                                       <li>Please check image given below.
@@ -842,15 +843,6 @@
                                         <img src="images/app/limit.png">
                                     </li>
                                     <li>& It is extended for some APIs like - categoryCubit.dart, bookmarkCubit.dart, LikeAndDislikeCubit.dart, bookmarkCubit.dart.</li>
-                                </ul>
-                                <hr>
-                            </section>
-
-                        <section id="removeTestLogin">
-                                <h4>How to Remove test credentials in login screen?</h4>
-                                <ul>
-                                     <li>Go to lib > ui > screens > auth > loginScreen.dart File & comment or remove lines mentioned below.</li>
-                                         <img src="images/app/removeTestCredentials.png">
                                 </ul>
                                 <hr>
                             </section>
