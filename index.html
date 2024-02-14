@@ -123,10 +123,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#howToIntegrateFirebase">Integrate Firebase with Web App</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#howToRunWebProject">How to run Web project</a>
-                                </li>
-
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="#howToChangeAppName">How to change application name</a>
                                 </li>
@@ -140,10 +137,6 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#howToSetSEO">How set SEO</a>
-                                </li>
-
-                                <li class="nav-item">
                                     <a class="nav-link" href="#howToWebSettings">How to Set Logo, Theme Color etc</a>
                                 </li>
 
@@ -154,13 +147,22 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#howTosetSitemap">How to Setup Sitemap</a>
                                 </li>
-
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="#howTochangeFonts">How to Change Fonts</a>
                                 </li>
-
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#howToRunWebProject">How to run Web project</a>
+                                </li>
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="#howToGenerateReleaseApk">How to deploy the Site</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#SeoForWeb">SEO For Web</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#nextjsdeploy">Next Js Deploayment</a>
                                 </li>
                             </ul>
                         </li>
@@ -988,27 +990,11 @@
                                         <ol>
                                             <li><h6>API Url is your admin panel url which is used to fetch the data from admin panel</h6>
                                                 Open .env file and  change the following details
-                                                <img src="images/web/apiurl.png" alt="News" />
+                                                <img src="./images/web/adminPanelurl.png" alt="News" />
                                             </li>
                                         </ol>
                                         <hr>
                                     </section>
-
-                                    <!-- <section id="WhereToSetWebURL">
-                                        <h4>
-                                            <li>Where to set Web URL</li>
-                                        </h4>
-                                        <ol>
-                                            <li>
-                                                Open package.json -> homepage
-                                                <img src="images/web/weburl.png" alt="News" />
-                                            </li>
-                                        </ol>
-                                        <hr>
-                                    </section> -->
-
-
-
 
                                     <section id="howToIntegrateFirebase">
                                         <h4>
@@ -1035,7 +1021,7 @@
                                                 <br>
                                             </li>
                                             <li>
-                                                And paste this your Credentials in <b>.env</b> and <b>public/firebase-messaging-sw.js</b>File.
+                                                And paste this your Credentials in <b>.env</b> and <b>public/firebase-messaging-sw.js</b> File.
                                                 <img src="images/web/firebase4.png" alt="news">
                                                 <img src="images/web/notification.png" alt="news">
                                                 <br>
@@ -1045,7 +1031,7 @@
                                                open firebase account go to project settings -> cloud messaging -> Web configuration and select key and paste in .env file
                                                 <img src="images/web/webpush.png" alt="news">
                                                 <img src="images/web/webpushkey.png" alt="news">
-                                                <img src="images/web/vapidkey.png" alt="news">
+                                                <img src="./images/web/nextjs_vapidkey.png" alt="news">
                                                 <br>
                                             </li>
                                             <li>
@@ -1073,56 +1059,33 @@
                                         <hr>
                                     </section>
 
-                                    <section id="howToRunWebProject">
-                                        <h4>
-                                            <li>How to run this project</li>
-                                        </h4>
-                                        <ol>
-                                            <li>
-                                                Unzip the downloaded code. After unzipping you will have News - Web Code Folder.
-                                                <br>
-                                                Open it in Visual Studio Code.
-                                            </li>
-                                            <li>
-                                                Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm i --force</b>
-                                                <br>
-                                                This will take some time to download a few Packages so wait for a few minutes.
-                                            </li>
-                                            <li> After <b>npm i --force</b> finishes run this command --> <b>npm start</b>.
-                                                <br>
-                                                This Command will Start the development mode.Check If everything is working fine then your are good to go ahead.
-
-                                            </li>
-                                        </ol>
-                                        <hr>
-                                    </section>
-
-
                                     <section id="howToChangeAppName">
                                         <h4>
                                             <li>How to change Web Application name</li>
                                         </h4>
                                         <ol>
-                                            <li>Change application name for your Web application. Go to folder
-                                                public -> index.html
-                                                <img src="images/web/appname.png" alt="News" />
+                                            <li>Change application name for your Web application. Go to <code>.env file</code>
+                                                <img src="./images/web/webtitle.png" alt="News" />
                                             </li>
                                         </ol>
                                         <hr>
                                     </section>
+
                                     <section id="howToSetFaviconIcon">
                                         <h4>
                                             <li>How to Set Favicon Icon</li>
                                         </h4>
 
                                         <ol>
+                                            <p>go to public folder & add your favicon Note: file name must be <code>favicon.ico</code></p>
+                                            <p>Here you can generate favicon icon :- <a target="_blank" href="https://www.favicon-generator.org/" rel="nofollow">Favicon Generator</a></p>
                                             <li>
-                                                Go to folder public -> index.html
-                                                <img src="images/web/favicon.png" alt="News" />
+                                                <img src="./images/web/nextjs_faviocn.png" alt="News" />
                                             </li>
                                         </ol>
                                         <hr>
                                     </section>
+
                                     <section id="howToSetColorCodeLoader">
                                         <h4>
                                             <li>How to Set Color Code of Loader</li>
@@ -1130,26 +1093,13 @@
 
                                         <ol>
                                             <li>
-                                                Go to .env -> REACT_APP_COLOR
+                                                Go to .env -> NEXT_PUBLIC_COLOR
                                                 <img src="images/web/color.png" alt="News" />
                                             </li>
                                         </ol>
                                         <hr>
                                     </section>
 
-                                    <section id="howToSetSEO">
-                                        <h4>
-                                            <li>How to Set SEO Strings</li>
-                                        </h4>
-
-                                        <ol>
-                                            <li>
-                                                Open .env file and  change the following details
-                                                <img src="images/web/seo.png" alt="News" />
-                                            </li>
-                                        </ol>
-                                        <hr>
-                                    </section>
                                     <section id="howToWebSettings">
                                         <h4>
                                             <li>How to Set Logo, Theme Color, Web Name, Footer Logo, Footer Description etc</li>
@@ -1163,6 +1113,7 @@
                                         </ol>
                                         <hr>
                                     </section>
+
                                     <section id="howTochangeFooterArea">
                                         <h4>
                                             <li>How to Change Footer Social Media Links</li>
@@ -1181,7 +1132,7 @@
                                         </ol>
                                         <hr>
                                     </section>
-                                  
+
                                     <section id="howTosetSitemap">
                                         <h4>
                                             <li>How to Setup Sitemap</li>
@@ -1213,12 +1164,37 @@
                                                 <img src="images/web/google-fonts.png" alt="News" />
                                             </li>
                                             <li>
-                                                Open <b>src/css</b> file
-                                                <img src="images/web/font2.png" alt="News" />
+                                                Open <b><code>public/assets/css/style.css</code></b> file
+                                                <img src="./images/web/style_css.png" alt="News" />
                                             </li>
                                         </ol>
                                         <hr>
                                     </section>
+
+                                    <section id="howToRunWebProject">
+                                        <h4>
+                                            <li>How to run this project</li>
+                                        </h4>
+                                        <ol>
+                                            <li>
+                                                Unzip the downloaded code. After unzipping you will have News - Web Code Folder.
+                                                <br>
+                                                Open it in Visual Studio Code.
+                                            </li>
+                                            <li>
+                                                Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm i --force</b>
+                                                <br>
+                                                This will take some time to download a few Packages so wait for a few minutes.
+                                            </li>
+                                            <li> After <b>npm i --force</b> finishes run this command --> <b>npm run dev</b>.
+                                                <br>
+                                                This Command will Start the development mode.Check If everything is working fine then your are good to go ahead.
+
+                                            </li>
+                                        </ol>
+                                        <hr>
+                                    </section>
+
                                     <section id="howToGenerateReleaseApk">
                                         <h4>
                                             <li>How to deploy the Site</li>
@@ -1226,17 +1202,120 @@
                                         <ol>
                                             <li>After all the changes you are ready to deploy your Web applicaiton on Live Server.</li>
                                             <li>
-                                                Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm run build</b>
+                                                Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm run export</b>
                                                 <br>This will take few seconds to build the live and the optimized version of the web application.
                                             </li>
                                             <li>
-                                                After the process completion go to public > build Folder and upload this files on your live server.<br />
-                                                (only upload <b>build </b>Folder's files on server do not upload any other file on server)
+                                                After the process completion go to public > out Folder and upload this files on your live server.<br />
+                                                (only upload <b>out </b>Folder's files on server do not upload any other file on server)
                                             </li>
                                             <li>If you are facing any deployment related problems you can follow the official document : <a href="https://create-react-app.dev/docs/deployment/" target="_blank">React App Deployment</a></li>
                                         </ol>
                                         <hr>
                                     </section>
+
+
+                                    <section id="SeoForWeb">
+                                        <h4>
+                                           <li>Seo for Web</li>
+                                        </h4>
+                                        <ol>
+                                           <h4 style="color: red;">Note: If you possess a VPS server along with some familiarity with <a href="https://nodejs.org/docs/latest/api/">Node.js</a>, <a href="https://docs.npmjs.com/">npm</a>, and <a href="https://pm2.keymetrics.io/docs/usage/quick-start/">pm2</a>, you're well-equipped to delve into the Advanced SEO section. Otherwise, feel free to skip this part and deploy your site.</h4>
+                                           <li>
+                                              if you have VPS server then go to <code>.env file </code> and make it "true"<code>NEXT_PUBLIC_SEO="true"</code> 
+                                           </li>
+                                           <img src="../images/web/next_public_seo.png" alt="News" />
+                                        </ol>
+                                        <hr>
+                                     </section>
+                                     <section id="nextjsdeploy">
+                                        <h4>
+                                           <li>Next JS Deployment</li>
+                                        </h4>
+                                        <ol>
+                                           <!-- <li> -->
+                                          <p style="color: red;">
+                                            (For SEO) Deployment of the Next JS needs a bit of knowledge about <code>node js, npm, pm2 </code> technologies. We have assumed that you are using a <code>debian </code> based OS, apt is your package manager. If you are using any other linux distro then apt will be replaced with the respective package manager of the OS
+                                          </p> 
+                                           <!-- </li> -->
+                                           <br>
+                                           <h3>First zip your whole web code and upload to your server and after unzip your web code and open terminal in that folder and follow this steps.</h3>
+                                           <li>
+                                              First you need to install the latest node js version <br>
+                                              <b><code>sudo apt install nodejs
+                                              </code></b>
+                                           </li>
+                                           <li>
+                                              Check if node js is installed correctly using this command <br>
+                                              <b><code>node -v
+                                              </code></b>
+                                           </li>
+                                           <li>
+                                              Then you need to install required packages for your system. This will take some time to install. So make sure to not to close this process
+                                              <br>
+                                              <b><code>npm install --force
+                                              </code></b>
+                                           </li>
+                                           <li>
+                                              Now you need to install pm2
+                                              <br>
+                                              <b><code>sudo npm install -g pm2
+                                              </code></b>
+                                           </li>
+                                           <li>
+                                              Now Create Production optimised build using
+                                              <br>
+                                              <b><code>npm run build
+                                              </code></b>
+                                           </li>
+                                           <li>
+                                              now create a auto restarting process using pm2
+                                              <br>
+                                              <b><code>pm2 start "npm start" -n "news Demo Site"
+                                              </code></b>
+                                           </li>
+                                           <li>
+                                              Check if pm2 process is Running OK
+                                              <br>
+                                              <b><code>pm2 ls
+                                              </code></b> <br>
+                                              <p>When you run pm2 ls you will see , 2 types of output
+                                              </p>
+                                              <br>
+                                              1. Error :<br>
+                                              <img src="./images/web/news_pm2_eerror.png" alt="news" />
+                                              2. Success :<br>
+                                              <img src="./images/web/news_pm2.png" alt="news" /><br>
+                                              <p>If you are getting errors in the pm2 process , then run pm2 logs and send us the Screenshot of the error, so that we can guide you to resolve your issues.</p>
+                                              <p>If you want to restart your pm2 process then run pm2 restart id // Replace id with your process id</p>
+                                              <p>For example here id is 0 in the above screenshot --> <b><code> pm2 restart 0</code></b></p>
+                                           </li>
+                                           <li>
+                                              Create Reverse Proxy for the Node JS server in your apache server settings (example we use vps with aapanel :- <a href="https://www.aapanel.com/new/index.html" target="_blank" rel="nofollow">aapanel</a>)
+                                              <p>
+                                                 
+                                                 <code>
+                                                 <!-- <pre> -->
+                                                    <!-- <code> -->
+                                                 &lt;Location /&gt; <br>
+                                                 ProxyPass http://localhost:8001/ <br>
+                                                 &lt;/Location&gt;
+                                                 <!-- </code> -->
+                                                 <!-- </pre> -->
+                                                 <br>
+                                                 <img src="../images/web/proxy_config.png" alt="news" />
+                                              </code>
+                                           </p>
+                                           </li>
+                                           <li>
+                                              You needs a bit of knowledge about this reference link of packages and technologies <br>
+             
+                                           <code>  <b>Node js</b> :</code> <a href="https://nodejs.org/docs/latest/api/" target="_blank">https://nodejs.org/docs/latest/api/</a><br>
+                                           <code> <b>npm</b> :</code> <a href="https://docs.npmjs.com/" target="_blank">https://docs.npmjs.com/</a><br>
+                                           <code> <b>pm2</b> :</code> <a href="https://pm2.keymetrics.io/docs/usage/quick-start/" target="_blank">https://pm2.keymetrics.io/docs/usage/quick-start/</a>
+                                           </li>
+                                        </ol>
+                                     </section>
                                 </ol>
                             </section>
                             <section id="support">
