@@ -117,8 +117,7 @@
                             asset?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#font">How to change app
                             font?</a></li>
-                        <li class="nav-item"><a class="nav-link" href='#serverurl'>How to set JWT
-                            key and change
+                        <li class="nav-item"><a class="nav-link" href='#serverurl'>How to change
                             Server URL of application?</a></li>
                         <li class="nav-item"><a class="nav-link" href='#settings'>System Settings
                             for
@@ -350,13 +349,10 @@
 
                     <section id="system-configurations">
                         <h4>Set System Configurations</h4>
-                        <p>Change the System Timezone, App Name, JWT KEY & App Logo of News admin
+                        <p>Change the System Timezone, App Name & App Logo of News admin
                             panel. And also
                             Enable / Disable Category, Subcategory, Breaking News, Live Streaming
                             Comments.</p>
-                        <p>JWT KEY is just like password & You can create your own. It should be
-                            same in News app.
-                        </p>
                         <a href="images/news_laravel/system-configurations.png" target="_blank"><img
                                 src="images/news_laravel/system-configurations.png"
                                 alt='System Configurations'
@@ -1015,7 +1011,9 @@
                                 name in Constant.dart File as shown below.
                             </li>
                             <img src="images/app/dynamicLinkConstant.png" alt="news"/>
-                            <li>Also add your Dynamic link prefix in android -> app -> main ->
+                            <li>Also add your Dynamic link & Add value of
+                                deepLinkUrlPrefix
+                                from Constant.dart (without https://) in android -> app -> main ->
                                 AndroidManifest.xml file as shown below.
                             </li>
                             <img src="images/app/dynamic_link.png" alt="news"/>
