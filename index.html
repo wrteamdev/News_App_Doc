@@ -208,6 +208,7 @@
                         </li>
 
                         <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
+                        <li class="nav-item"><a href="#faqs" class="nav-link">FAQs</a></li>
                         <li class="nav-item"><a href="#rating" class="nav-link">Your Feedback</a></li>
                         <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
                     </ul>
@@ -230,13 +231,6 @@
                         </section>
 
                         <hr class="divider" />
-                        <h4>Where to find purchase code</h4>
-                        <p>If you have trouble to find your purchase code <a
-                                href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code"
-                                style="color: #3c55d1;">Here</a></p>
-
-
-                        <hr class="divider">
 
                         <section id="admin_panel">
                             <h3>News App Admin Panel</h3>
@@ -1966,6 +1960,34 @@
                             </p>
                             <p>Typically we reply our customers for all the questions and queries within 24 hours of
                                 time via comments, support forum or emails.</p>
+                        </section>
+
+
+                        <hr class="divider">
+                        <section id="faqs">
+                            <h3>FAQs</h3>
+                            <li><b>Where can i find my purchase code?</b></li>
+                            &emsp;You may find your purchase code <a
+                                href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code"
+                                style="color: #3c55d1;">here</a>
+                            <br><br>
+                            <li><b>FLUTTER APP: issue in running version 3.1.5 with Flutter
+                                    3.22.0?</b></li>
+                            <ol>
+                                <li>Run command -> flutter pub upgrade --major-versions</b></li>
+                                <li>goto <b> /lib/ui/screens/NewsDetailsVideo.dart</b> File and replace viewVideo()
+                                    with following: <br />
+                                    <pre> viewVideo() {
+    WebUri frm;
+    frm = WebUri.uri(Uri.dataFromString(iframe, mimeType: 'text/html'));
+        return Center(
+    child: InAppWebView(initialUrlRequest: URLRequest(url: frm)),
+        );
+    } </pre>
+                                </li>
+                            </ol>
+
+
                         </section>
 
 
