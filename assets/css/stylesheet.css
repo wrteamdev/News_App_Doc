@@ -723,7 +723,7 @@ hr {
 }
 
 .idocs-navigation::-webkit-scrollbar-thumb {
-    background: #ff3f4c !important;
+    background: #E82834 !important;
 }
 
 .idocs-navigation>.nav {
@@ -2072,11 +2072,11 @@ hr {
 }
 
 .accordion .card-header a:hover.collapsed {
-    color: #0366d6 !important;
+    color: #E82834!important;
 }
 
 .accordion:not(.accordion-alternate) .card-header a {
-    background-color: #0366d6;
+    background-color: #E82834;
     color: #fff;
 }
 
@@ -2281,7 +2281,7 @@ hr {
 
 .nav:not(.nav-pills) .nav-item .nav-link.active,
 .nav:not(.nav-pills) .nav-item .nav-link:hover {
-    color: #ff3f4c;
+    color: #E82834;
 }
 
 .nav-pills .nav-link:not(.active):hover {
