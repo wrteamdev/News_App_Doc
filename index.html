@@ -235,6 +235,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#nextjsdeploy">Next Js Deploayment</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#htaccessCode">.htaccess File Code</a>
+                            </li>
                         </ul>
                     </li>
 
@@ -1873,6 +1876,14 @@
                                     </span>
                                 </div>
 
+                                <div class="inform_box">
+                                    <div class="main_title">
+                                        <span class="warning_icon"><i class="fas fa-exclamation-circle"></i></span>
+                                        <h6>INFO</h6>
+                                    </div>
+                                    <span> <a href="#htaccessCode">Click here to get .htaccess file code (only for seo deployment)</a> </span>
+                                </div>
+
                                 <div style="margin-top: 30px;">
                                     <h5>Video Tutorial: <a href="https://youtu.be/WJGKl9hWz8s?si=5uwZ_X4wrP7AhnoF"
                                             target="_blank">Video</a></h5>
@@ -2045,6 +2056,39 @@
                                         <span> For more information, use <a
                                                 href="https://pm2.keymetrics.io/docs/usage/quick-start/">official
                                                 documentation</a> </span>
+                                    </div>
+                                </ol>
+                            </section>
+                            <section id="htaccessCode">
+                                <h4>
+                                    <li>.htaccess File Code</li>
+                                </h4>
+                                <ol>
+                                    <div class="main_box">
+                                        <pre>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^_next/(.*) /.next/$1 [L]
+ # Allow access to static files with specific extensions
+RewriteCond %{REQUEST_URI} \.(js|css|svg|jpg|jpeg|png|gif)$
+RewriteRule ^ - [L]
+
+RewriteRule ^index.html http://127.0.0.1:8003/$1 [P]
+RewriteRule ^index.php http://127.0.0.1:8003/$1 [P]
+RewriteRule ^/?(.*)$ http://127.0.0.1:8003/$1 [P]
+                                       </pre>
+                                    </div>
+                                    <div class="warning_box">
+                                        <div class="main_title">
+                                            <span class="warning_icon"><i
+                                                    class="fas fa-exclamation-triangle"></i></span>
+                                            <h6>MANDATORY</h6>
+                                        </div>
+                                        <b>Make sure you have wrap this code in IfModule tag as show in below image</b>
+                                    </div>
+                                    <div>
+                                        <img src="images/web/htaccessFileCode.png" alt="htacessFileCode">
                                     </div>
                                 </ol>
                             </section>
