@@ -166,6 +166,13 @@
                         <a href="#news_web_app" class="nav-link">News Web</a>
                         <ul class="nav flex-column">
                             <li class="nav-item">
+                                <a class="nav-link" href="#differenceSeoNonSeo">Difference between SEO and NON-SEO
+                                    Web</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#videoGuide">Video Tutorials</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#howToSetupWebVersion">How to setup Web Version</a>
                             </li>
                             <li class="nav-item">
@@ -186,10 +193,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#howToSetFaviconIcon">How to change Favicon Icon</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#howToSetColorCodeLoader">How to change color code
-                                    loader</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#howToWebSettings">How to Set Logo, Theme Color etc</a>
@@ -1422,15 +1425,89 @@
 
                     <hr class="divider">
                     <section id="news_web_app">
+
+                        <div class="red_warning_box">
+                            <div class="main_title">
+                                <h4 style="font-weight: 900;">News Web App</h4>
+                            </div>
+                            <div class="">
+                                <b> News Web Version is built with Next JS v14.0.3 so you need to setup your Local
+                                    Computer First. </b>
+                            </div>
+                        </div>
+                        <div class="warning_box">
+                            <div class="main_title">
+                                <span class="warning_icon"><i class="fas fa-exclamation-triangle"></i></span>
+                                <h6>MANDATORY</h6>
+                            </div>
+                            <div class="">
+                                <b> The Web domain must be SSL for security reasons </b>
+                            </div>
+                        </div>
+
                         <ol>
-                            <h3>News Web App</h3>
-                            <span>News Web Version is built with Next JS v14.0.3 so you need to setup your Local
-                                Computer First.</span>
                             <br>
-                            <br>
-                            <span><b><code>The Web domain must be SSL for security reasons</code></b></span>
                             <br />
 
+                            <section id="differenceSeoNonSeo">
+                                <h4>
+                                    <li>Difference between SEO & NON-SEO Web</li>
+                                </h4>
+
+                                <ol>
+                                    <h5 style="margin-bottom: 12px;margin-left: -18px">SEO :-</h5>
+                                    <li>You can add meta title,meta description ,meta keywords for pages mentioned in
+                                        admin -> system-settings -> seo-settings.</li>
+                                    <li>If you have added meta title,meta description and meta keywords for news then
+                                        meta title will render on title bar of every news detail page and this data will
+                                        help search engines to rank up the page.</li>
+                                    <li>You can share the news with its image and its title</li>
+                                </ol>
+                                <br />
+                                <ol>
+                                    <h5 style="margin-bottom: 12px;margin-left: -18px">NON-SEO :-</h5>
+                                    <li>Meta tile,meta description and meta keywords you have added in your .env file
+                                        that will be same for every page.</li>
+                                    <li>You can't share the news with its image and title.</li>
+                                </ol>
+                                <hr />
+                            </section>
+                            <section id="videoGuide">
+                                <h4>
+                                    Video Tutorials
+                                </h4>
+
+                                <ol>
+                                    <li>Local Build and Deploy <b>(WITHOUT SEO) =></b> <a
+                                            href="https://youtu.be/wfvMgiN2GDk?si=cE3ps6O7kkt3pC4F"
+                                            target="_blank">Youtube
+                                            Link</a></li>
+
+                                    <iframe width="100%" height="600" style="border-radius: 12px;margin-top: 12px"
+                                        src="https://www.youtube.com/embed/wfvMgiN2GDk?si=Mf1CTygSpJ4QpSE9"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                    <br />
+                                    <br />
+
+                                    <li>Deploy <b>(WITH SEO) =></b> <a
+                                            href="https://youtu.be/WJGKl9hWz8s?si=5uwZ_X4wrP7AhnoF"
+                                            target="_blank">Youtube
+                                            Link</a></li>
+                                            <br />
+                                    <iframe width="100%" height="600" style="border-radius: 12px;margin-top: 0px"
+                                        src="https://www.youtube.com/embed/WJGKl9hWz8s?si=IgEYgirvIgTYNz5A"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                    <br />
+                                    <br />
+                                </ol>
+                                <hr />
+                            </section>
                             <section id="howToSetupWebVersion">
                                 <h4>
                                     <li>How to setup Web Version</li>
@@ -1582,20 +1659,6 @@
                                 <hr />
                             </section>
 
-                            <section id="howToSetColorCodeLoader">
-                                <h4>
-                                    <li>How to Set Color Code of Loader</li>
-                                </h4>
-
-                                <ol>
-                                    <li>
-                                        Go to .env -> NEXT_PUBLIC_COLOR
-                                        <img src="images/web/color.png" alt="News" />
-                                    </li>
-                                </ol>
-                                <hr />
-                            </section>
-
                             <section id="howToWebSettings">
                                 <h4>
                                     <li>How to Set Logo, Theme Color, Web Name, Footer Logo, Footer Description etc
@@ -1728,8 +1791,8 @@
                                         <img src="./images/web/fontFamily.png" alt="News" />
                                     </li>
                                     <li>
-                                        Paste font family value as show in image 
-                                        <img src="./images/web/StyleFile.png" alt="News" />
+                                        Paste font family value as show in image
+                                        <img src="./images/web/style_css.png" alt="News" />
                                     </li>
                                 </ol>
                                 <hr />
@@ -1884,12 +1947,42 @@
                                     </span>
                                 </div>
 
+                                <div class="warning_box">
+                                    <div class="main_title">
+                                        <span class="warning_icon"><i class="fas fa-exclamation-triangle"></i></span>
+                                        <h6>MANDATORY</h6>
+                                    </div>
+                                    <div class="d-flex flex-column" style="gap: 12px;">
+                                        <span>
+                                            <b> 1.VPS Hosting:</b> A Virtual Private Server (VPS) is mandatory to ensure
+                                            reliable
+                                            performance and security. Shared hosting environments are not supported for
+                                            this
+                                            web application.
+                                        </span>
+                                        <span>
+                                            <b>2.Node.js Support:</b> The server must support Node.js , as it is
+                                            essential for running the application with seo.
+                                        </span>
+                                        <span>
+                                            <b>3.Memory Requirements:</b> The server should have at least 3-4 GB of free
+                                            RAM
+                                            to handle the application's processes effectively.
+                                        </span>
+                                        <span>
+                                            <b>4.SSH Root Access:</b> The server must provide SSH root access to execute
+                                            Node.js commands and manage the application.
+                                        </span>
+                                    </div>
+                                </div>
+
                                 <div class="inform_box">
                                     <div class="main_title">
                                         <span class="warning_icon"><i class="fas fa-exclamation-circle"></i></span>
                                         <h6>INFO</h6>
                                     </div>
-                                    <span> <a href="#htaccessCode">Click here to get .htaccess file code (only for seo deployment)</a> </span>
+                                    <span> <a href="#htaccessCode">Click here to get .htaccess file code (only for seo
+                                            deployment)</a> </span>
                                 </div>
 
                                 <div style="margin-top: 30px;">
@@ -1970,7 +2063,48 @@
                                     <div class="main_box">
                                         <code> <b>npm install pm2 -g</b></code>
                                     </div>
-                                    <h3>Pass the Proxy in the Server</h3>
+
+                                    <h3>Set port </h3>
+                                    <p>Before set port check available ports with this
+                                        command </p>
+                                    <div class="main_box">
+                                        <code> <b>sudo lsof -i -P -n | grep 8003</b></code>
+                                        <br>
+                                        <img src="./images/web/port_occupy.png" alt="News" />
+                                        <br>
+                                        <h5>if you get response like this it means this port is
+                                            occupy with
+                                            other project so
+                                            try
+                                            other port like (8000, 8001, 8002, 8003, 8004
+                                            etc)</h5>
+                                        <br>
+                                        <img src="./images/web/available_port.png" alt="News" />
+                                        <br>
+                                        <h5>if you get response like this it means this port is
+                                            available you
+                                            can use this
+                                            port
+                                        </h5>
+                                        <h5>Now add available port to your
+                                            <code>package.json</code> and
+                                            <code>.htaccess</code>
+                                            file
+                                        </h5>
+                                        <br>
+                                        <img src="./images/web/package_json.png" alt="News" />
+                                        <br>
+                                        <h5>Copy the .htaccess file code given then change the port : <b><a href="#htaccessCode">Get htaccess code</a></b></h5>
+                                        
+                                        <img src="./images/web/htaccess_file.png" alt="News" />
+                                        <br>
+                                        <!-- <h3>Note:- if you have not found .htaccess file in your code then connect with <a href="https://join.skype.com/invite/yleWlTkGyS89" target="_blank">Skype</a> </h3> -->
+                                    </div>
+
+
+
+
+                                    <!-- <h3>Pass the Proxy in the Server</h3>
                                     <p>Before configuring Apache, some necessary modules need to be enabled. Run the
                                         following commands to enable the modules</p>
                                     <div class="main_box">
@@ -1986,18 +2120,14 @@
                                     </b>
                                     <p>
                                         <code>
-                                            <!-- <pre> -->
-                                            <!-- <code> -->
                                             &lt;Location /&gt; <br />
                                             ProxyPass http://localhost:8001/ <br />
                                             &lt;/Location&gt;
-                                            <!-- </code> -->
-                                        <!-- </pre> -->
                                         <br />
                                         <img src="images/web/proxy_config.png" alt="News" />
                                         </code>
                                     </p>
-                                    <br />
+                                    <br /> -->
                                     <br />
                                     <h3>Setup the Project</h3>
                                     <div class="warning_box">
@@ -2044,6 +2174,15 @@
                                         <p>If you are getting errors in the pm2 process , then run pm2 logs and send
                                             us the Screenshot of the error, so that we can guide you to resolve your
                                             issues.</p>
+                                        <p>
+                                            If successful, set up a startup script for your operating system to ensure
+                                            PM2 restarts automatically after a system reboot.
+                                            <b><code>pm2 startup</code></b>
+                                        </p>
+                                        <p>
+                                            After setting up PM2 with the startup command, save the current process list
+                                            <b><code>pm2 save</code></b>
+                                        </p>
                                         <p>If you want to restart your pm2 process then run pm2 restart id //
                                             Replace id with your process id</p>
                                         <p>
