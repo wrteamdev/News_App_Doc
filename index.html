@@ -166,8 +166,7 @@
                         <a href="#news_web_app" class="nav-link">News Web</a>
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="#differenceSeoNonSeo">Difference between SEO and NON-SEO
-                                    Web</a>
+                                <a class="nav-link" href="#differenceInSeoAndWithoutSeo">Difference between with SEO & without SEO web</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#videoGuide">Video Tutorials</a>
@@ -1449,13 +1448,13 @@
                             <br>
                             <br />
 
-                            <section id="differenceSeoNonSeo">
+                            <section id="differenceInSeoAndWithoutSeo">
                                 <h4>
-                                    <li>Difference between SEO & NON-SEO Web</li>
+                                    <li>Difference between with SEO & without SEO web</li>
                                 </h4>
 
                                 <ol>
-                                    <h5 style="margin-bottom: 12px;margin-left: -18px">SEO :-</h5>
+                                    <h5 style="margin-bottom: 12px;margin-left: -18px">With SEO :-</h5>
                                     <li>You can add meta title,meta description ,meta keywords for pages mentioned in
                                         admin -> system-settings -> seo-settings.</li>
                                     <li>If you have added meta title,meta description and meta keywords for news then
@@ -1465,8 +1464,8 @@
                                 </ol>
                                 <br />
                                 <ol>
-                                    <h5 style="margin-bottom: 12px;margin-left: -18px">NON-SEO :-</h5>
-                                    <li>Meta tile,meta description and meta keywords you have added in your .env file
+                                    <h5 style="margin-bottom: 12px;margin-left: -18px">Without SEO :-</h5>
+                                    <li>Meta title,meta description and meta keywords you have added in your .env file
                                         that will be same for every page.</li>
                                     <li>You can't share the news with its image and title.</li>
                                 </ol>
@@ -1496,7 +1495,7 @@
                                             href="https://youtu.be/WJGKl9hWz8s?si=5uwZ_X4wrP7AhnoF"
                                             target="_blank">Youtube
                                             Link</a></li>
-                                            <br />
+                                    <br />
                                     <iframe width="100%" height="600" style="border-radius: 12px;margin-top: 0px"
                                         src="https://www.youtube.com/embed/WJGKl9hWz8s?si=IgEYgirvIgTYNz5A"
                                         title="YouTube video player" frameborder="0"
@@ -1921,7 +1920,118 @@
                                             <code>.htaccess</code> file then web pages will not open as expected.
                                         </b>
                                     </span>
+                                    <br>
+                                    <span>
+                                        <b>
+                                            *If you are not able to find .htaccess file in your source code then please
+                                            enable hidden files on your pc.
+                                        </b>
+                                    </span>
                                 </div>
+
+                                <h4>
+                                    If your server is nginx server then copy the below code and upload that code in your
+                                    server's nginx.conf file's server block as shown in the example image below.
+                                </h4>
+
+                                <ol>
+                                    <div class="main_box">
+                                        <pre>
+# nginx configuration by winginx.
+location /breaking {
+  rewrite ^/breaking-news/([^/]+)$ /breaking-news/[slug].html break;
+}
+
+location /categories {
+  rewrite ^/categories-news/([^/]+)$ /categories-news/[slug].html break;
+}
+
+location /tag {
+  rewrite ^/tag/([^/]+)$ /tag/[slug].html break;
+}
+
+location /news {
+  rewrite ^/news/([^/]+)$ /news/[slug].html break;
+  rewrite ^/news-notification$ /news-notification.html break;
+}
+
+location /video {
+  rewrite ^/video-news-view/([^/]+)$ /video-news-view/[slug].html break;
+}
+
+location /view {
+  rewrite ^/view-all/([^/]+)$ /view-all/[slug].html break;
+}
+
+location /all {
+  rewrite ^/all-breaking-news$ /all-breaking-news.html break;
+  rewrite ^/all-categories$ /all-categories.html break;
+}
+
+location = /bookmark {
+  rewrite ^(.*)$ /bookmark.html break;
+}
+
+location /create {
+  rewrite ^/create-news$ /create-news.html break;
+}
+
+location /edit {
+  rewrite ^/edit-news$ /edit-news.html break;
+}
+
+location = /index {
+  rewrite ^(.*)$ /index.html break;
+}
+
+location /live {
+  rewrite ^/live-news$ /live-news.html break;
+}
+
+location = /loading {
+  rewrite ^(.*)$ /loading.html break;
+}
+
+location /manage {
+  rewrite ^/manage-news$ /manage-news.html break;
+}
+
+location /more {
+  rewrite ^/more-pages$ /more-pages.html break;
+}
+
+location /personal {
+  rewrite ^/personal-notification$ /personal-notification.html break;
+}
+
+location /profile {
+  rewrite ^/profile-update$ /profile-update.html break;
+}
+
+location /user {
+  rewrite ^/user-based-categories$ /user-based-categories.html break;
+}
+
+location = /rss {
+  rewrite ^(.*)$ /rss.html break;
+}
+
+location / {
+  if (!-e $request_filename){
+    rewrite ^(.*)$ /404.html break;
+  }
+}
+                                       </pre>
+                                    </div>
+
+                                    <h4>
+                                        Example is shown in below image
+                                    </h4>
+                                    <div>
+                                        <img src="images/web/nginxConf_file.png" alt="htacessFileCode">
+                                    </div>
+                                </ol>
+
                                 <hr />
                             </section>
 
@@ -2094,8 +2204,9 @@
                                         <br>
                                         <img src="./images/web/package_json.png" alt="News" />
                                         <br>
-                                        <h5>Copy the .htaccess file code given then change the port : <b><a href="#htaccessCode">Get htaccess code</a></b></h5>
-                                        
+                                        <h5>Copy the .htaccess file code given then change the port : <b><a
+                                                    href="#htaccessCode">Get htaccess code</a></b></h5>
+
                                         <img src="./images/web/htaccess_file.png" alt="News" />
                                         <br>
                                         <!-- <h3>Note:- if you have not found .htaccess file in your code then connect with <a href="https://join.skype.com/invite/yleWlTkGyS89" target="_blank">Skype</a> </h3> -->
