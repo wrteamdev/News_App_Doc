@@ -276,11 +276,31 @@
                         <hr class="divider" />
 
                         <section id="admin_panel">
-                            <h3>News App Admin Panel</h3>
+                            <!-- <h3>News App Admin Panel</h3> -->
 
+                            <h3>Requirements</h3>
                             <section id="installation">
-                                <h4>Requirements</h4>
-                                <p>PHP Version >= 8.1</p>
+                                <strong>For Web</strong>
+                                <ul class="mb-2">
+                                    <li>If you don’t need SEO for the frontend site, <strong>shared hosting</strong> will be sufficient.</li>
+                                    <li>If you want to use SEO for the frontend site, a <strong>VPS</strong> is necessary, as shared hosting does not provide the required resources.</li>
+                                    <ul>
+                                        <li><strong>Node.js Support:</strong> The server must support <strong>Node.js</strong> , as it is essential for running the application with seo.</li>
+                                        <li><strong>Memory Requirements:</strong> The server should have at least <strong>3-4 GB of free RAM</strong> to handle the application processes efficiently.</li>
+                                        <li><strong>SSH Root Access:</strong> The server must provide SSH root access to execute Node.js commands and manage the application.</li>
+                                    </ul>
+                                </ul>
+                                <p class="inform_box d-block"><strong>Note: </strong>You only need to choose either Shared Hosting or VPS, depending on your SEO requirements. There is no need to purchase both.</p>
+                                <strong>For Admin Panel</strong>
+                                <ul>
+                                    <li><strong>PHP Version:</strong> The Admin Panel is built using Laravel Framework 10.0, which requires a minimum PHP version of <strong>8.1.0</strong> or higher.</li>
+                                </ul>
+
+                                <strong>For App</strong>
+                                <ul>
+                                    <li><strong>Flutter Version:</strong> Flutter stable channel <strong>3.27.4</strong> sdk version.</li>
+                                    <li><strong>Java Version:</strong> Java Development Kit (JDK) version <strong>23</strong>.</li>
+                                </ul>
                                 <h4>How to Install News App on Your Server?</h4>
                                 <ol>
                                     <li>Create your domain or subdomain in your server.</li>
